@@ -89,7 +89,7 @@ void Init977(void)
 {
 	IDSC(desc_977, 0, 976);
 	IDSC(desc_977 + 1, 1, 976);
-	IDSC(desc_977 + 32, 406, 976);
+	IDSC(desc_977 + 32, 410, 976);
 }
 
 

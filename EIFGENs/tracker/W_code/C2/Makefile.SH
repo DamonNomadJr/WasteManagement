@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  kl1019.o kl1019d.o ev1022.o ev1022d.o da1007.o da1007d.o kl1018.o \
-	kl1018d.o ev1017.o ev1017d.o ev1016.o ev1016d.o ev1015.o ev1015d.o \
+OLDOBJECTS =  kl1020.o kl1020d.o da1008.o da1008d.o kl1019.o kl1019d.o ev1018.o \
+	ev1018d.o ev1017.o ev1017d.o ev1016.o ev1016d.o ev1015.o ev1015d.o \
 	ev1014.o ev1014d.o ev1013.o ev1013d.o ev1012.o ev1012d.o ev1011.o \
-	ev1011d.o ev1010.o ev1010d.o ev1009.o ev1009d.o ev1008.o ev1008d.o \
-	da1006.o da1006d.o kl1005.o kl1005d.o kl1004.o kl1004d.o ki1003.o \
-	ki1003d.o ev1002.o ev1002d.o ev1001.o ev1001d.o ev1000.o ev1000d.o \
-	ev999.o ev999d.o ev998.o ev998d.o ev997.o ev997d.o uc996.o uc996d.o \
-	kl1020.o kl1020d.o kl995.o kl995d.o ev994.o ev994d.o ev993.o ev993d.o \
-	uc1021.o uc1021d.o kl992.o kl992d.o uc991.o uc991d.o ev990.o ev990d.o 
+	ev1011d.o ev1010.o ev1010d.o ev1009.o ev1009d.o da1007.o da1007d.o \
+	kl1006.o kl1006d.o kl1005.o kl1005d.o ki1004.o ki1004d.o ev1003.o \
+	ev1003d.o ev1002.o ev1002d.o ev1001.o ev1001d.o ev1000.o ev1000d.o \
+	ev999.o ev999d.o ev998.o ev998d.o uc997.o uc997d.o kl1021.o kl1021d.o \
+	kl996.o kl996d.o ev995.o ev995d.o ev994.o ev994d.o uc1022.o uc1022d.o \
+	kl993.o kl993d.o uc992.o uc992d.o ev991.o ev991d.o ev990.o ev990d.o 
 
 all: Cobj2.o
 

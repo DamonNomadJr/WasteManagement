@@ -1,5 +1,5 @@
 /*
- * Class EV_SHARED_APPLICATION
+ * Class EV_DRAWABLE_CONSTANTS
  */
 
 #include "eif_macros.h"
@@ -22,9 +22,6 @@ static const EIF_TYPE_INDEX egt_9_1105 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1105 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1105 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1105 [] = {0xFF01,1104,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1105 [] = {0xFF01,1250,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1105 [] = {0xFF05,1250,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1105 [] = {0xFF01,1244,0xFFFF};
 
 
 static const struct desc_info desc_1105[] = {
@@ -60,16 +57,18 @@ static const struct desc_info desc_1105[] = {
 	{EIF_NON_GENERIC(0x08A1 /*1104*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1105), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1105), 15593, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1105), 15594, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15595, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1105), 15596, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15621, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15622, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15623, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15624, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15625, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 15626, 0xFFFFFFFF},
 };
 void Init1105(void)
 {
 	IDSC(desc_1105, 0, 1104);
 	IDSC(desc_1105 + 1, 1, 1104);
-	IDSC(desc_1105 + 32, 539, 1104);
+	IDSC(desc_1105 + 32, 702, 1104);
 }
 
 

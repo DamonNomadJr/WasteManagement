@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1080_9256(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F1080_9257(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F1080_9258(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1080_9287(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1080_9288(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1080_9289(EIF_REFERENCE);
 extern void EIF_Minit1080(void);
 
 #ifdef __cplusplus
@@ -35,7 +35,7 @@ extern "C" {
 #endif
 
 /* {ETF_VALUE_PARAM}.eiffel_type */
-EIF_TYPED_VALUE F1080_9256 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F1080_9287 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "eiffel_type";
@@ -55,12 +55,12 @@ EIF_TYPED_VALUE F1080_9256 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1079, Current, 0, 0, 15487);
+	RTEAA(l_feature_name, 1079, Current, 0, 0, 15518);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(1079, Current, 15487);
+	RTDBGEAA(1079, Current, 15518);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF80000E7, 0,0); /* Result */
@@ -78,7 +78,7 @@ EIF_TYPED_VALUE F1080_9256 (EIF_REFERENCE Current)
 }
 
 /* {ETF_VALUE_PARAM}.create_clause */
-EIF_TYPED_VALUE F1080_9257 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F1080_9288 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "create_clause";
@@ -96,12 +96,12 @@ EIF_TYPED_VALUE F1080_9257 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1079, Current, 0, 0, 15488);
+	RTEAA(l_feature_name, 1079, Current, 0, 0, 15519);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(1079, Current, 15488);
+	RTDBGEAA(1079, Current, 15519);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF80000E7, 0,0); /* Result */
@@ -118,7 +118,7 @@ EIF_TYPED_VALUE F1080_9257 (EIF_REFERENCE Current)
 }
 
 /* {ETF_VALUE_PARAM}.out */
-EIF_TYPED_VALUE F1080_9258 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F1080_9289 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "out";
@@ -137,12 +137,12 @@ EIF_TYPED_VALUE F1080_9258 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1079, Current, 0, 0, 15489);
+	RTEAA(l_feature_name, 1079, Current, 0, 0, 15520);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1079, Current, 15489);
+	RTDBGEAA(1079, Current, 15520);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF80000E7, 0,0); /* Result */

@@ -1,5 +1,5 @@
 /*
- * Code for class EV_STANDARD_DIALOG_ACTION_SEQUENCES
+ * Code for class EV_LIST_ITEM_ACTION_SEQUENCES
  */
 
 #include "eif_eiffel.h"
@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1219_10687(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F1219_10688(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1219_10740(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1219_10741(EIF_REFERENCE);
 extern void EIF_Minit1219(void);
 
 #ifdef __cplusplus
@@ -33,11 +33,11 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {EV_STANDARD_DIALOG_ACTION_SEQUENCES}.ok_actions */
-EIF_TYPED_VALUE F1219_10687 (EIF_REFERENCE Current)
+/* {EV_LIST_ITEM_ACTION_SEQUENCES}.select_actions */
+EIF_TYPED_VALUE F1219_10740 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "ok_actions";
+	char *l_feature_name = "select_actions";
 	RTEX;
 	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
 #define up1 up1x.it_p
@@ -61,18 +61,18 @@ EIF_TYPED_VALUE F1219_10687 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1218, Current, 0, 0, 17453);
+	RTEAA(l_feature_name, 1218, Current, 0, 0, 17565);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1218, Current, 17453);
+	RTDBGEAA(1218, Current, 17565);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF800047A, 0,0); /* Result */
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8215, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTDBGAL(Current, 0, 0xF800047C, 0,0); /* Result */
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8264, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
-	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6289, "ok_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6266, "select_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr2);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
@@ -96,11 +96,11 @@ EIF_TYPED_VALUE F1219_10687 (EIF_REFERENCE Current)
 #undef up2
 }
 
-/* {EV_STANDARD_DIALOG_ACTION_SEQUENCES}.cancel_actions */
-EIF_TYPED_VALUE F1219_10688 (EIF_REFERENCE Current)
+/* {EV_LIST_ITEM_ACTION_SEQUENCES}.deselect_actions */
+EIF_TYPED_VALUE F1219_10741 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "cancel_actions";
+	char *l_feature_name = "deselect_actions";
 	RTEX;
 	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
 #define up1 up1x.it_p
@@ -124,18 +124,18 @@ EIF_TYPED_VALUE F1219_10688 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1218, Current, 0, 0, 17454);
+	RTEAA(l_feature_name, 1218, Current, 0, 0, 17566);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1218, Current, 17454);
+	RTDBGEAA(1218, Current, 17566);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF800047A, 0,0); /* Result */
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8215, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTDBGAL(Current, 0, 0xF800047C, 0,0); /* Result */
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8264, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
-	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6291, "cancel_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6268, "deselect_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr2);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);

@@ -10,12 +10,12 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1329_12011(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F1329_12012(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F1329_12013(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F1329_12014(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F1329_12015(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F1329_12016(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1329_12046(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1329_12047(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1329_12048(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1329_12049(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F1329_12050(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1329_12051(EIF_REFERENCE);
 extern void EIF_Minit1329(void);
 
 #ifdef __cplusplus
@@ -38,7 +38,7 @@ extern "C" {
 #endif
 
 /* {EV_TREE_NODE_LIST}.find_item_recursively_by_data */
-EIF_TYPED_VALUE F1329_12011 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F1329_12046 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "find_item_recursively_by_data";
@@ -78,12 +78,12 @@ EIF_TYPED_VALUE F1329_12011 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1328, Current, 0, 1, 18774);
+	RTEAA(l_feature_name, 1328, Current, 0, 1, 18864);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1328, Current, 18774);
+	RTDBGEAA(1328, Current, 18864);
 	RTIV(Current, RTAL);
 	if (RTAL & CK_ENSURE) {
 		in_assertion = ~0;
@@ -98,10 +98,10 @@ EIF_TYPED_VALUE F1329_12011 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	}
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF8000532, 0,0); /* Result */
-	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8301, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8357, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
 	ur1 = RTCCL(arg1);
-	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9864, "find_item_recursively_by_data", tr2))(tr2, ur1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9920, "find_item_recursively_by_data", tr2))(tr2, ur1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr3);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
@@ -142,7 +142,7 @@ EIF_TYPED_VALUE F1329_12011 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {EV_TREE_NODE_LIST}.retrieve_item_recursively_by_data */
-EIF_TYPED_VALUE F1329_12012 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+EIF_TYPED_VALUE F1329_12047 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
 {
 	GTCX
 	char *l_feature_name = "retrieve_item_recursively_by_data";
@@ -187,12 +187,12 @@ EIF_TYPED_VALUE F1329_12012 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 	RTLU(SK_BOOL,&arg2);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1328, Current, 0, 2, 18775);
+	RTEAA(l_feature_name, 1328, Current, 0, 2, 18865);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1328, Current, 18775);
+	RTDBGEAA(1328, Current, 18865);
 	RTIV(Current, RTAL);
 	if (RTAL & CK_ENSURE) {
 		in_assertion = ~0;
@@ -207,11 +207,11 @@ EIF_TYPED_VALUE F1329_12012 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 	}
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF8000532, 0,0); /* Result */
-	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8301, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8357, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
 	ur1 = RTCCL(arg1);
 	ub1 = arg2;
-	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(9865, "retrieve_item_recursively_by_data", tr2))(tr2, ur1x, ub1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(9921, "retrieve_item_recursively_by_data", tr2))(tr2, ur1x, ub1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr3);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
@@ -254,7 +254,7 @@ EIF_TYPED_VALUE F1329_12012 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 }
 
 /* {EV_TREE_NODE_LIST}.retrieve_items_recursively_by_data */
-EIF_TYPED_VALUE F1329_12013 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+EIF_TYPED_VALUE F1329_12048 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
 {
 	GTCX
 	char *l_feature_name = "retrieve_items_recursively_by_data";
@@ -299,12 +299,12 @@ EIF_TYPED_VALUE F1329_12013 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 	RTLU(SK_BOOL,&arg2);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1328, Current, 0, 2, 18776);
+	RTEAA(l_feature_name, 1328, Current, 0, 2, 18866);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1328, Current, 18776);
+	RTDBGEAA(1328, Current, 18866);
 	RTIV(Current, RTAL);
 	if (RTAL & CK_ENSURE) {
 		in_assertion = ~0;
@@ -319,11 +319,11 @@ EIF_TYPED_VALUE F1329_12013 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 	}
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF80000F6, 0,0); /* Result */
-	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8301, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8357, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
 	ur1 = RTCCL(arg1);
 	ub1 = arg2;
-	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(9866, "retrieve_items_recursively_by_data", tr2))(tr2, ur1x, ub1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr3 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(9922, "retrieve_items_recursively_by_data", tr2))(tr2, ur1x, ub1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr3);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
@@ -374,7 +374,7 @@ EIF_TYPED_VALUE F1329_12013 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_T
 }
 
 /* {EV_TREE_NODE_LIST}.has_recursively */
-EIF_TYPED_VALUE F1329_12014 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F1329_12049 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "has_recursively";
@@ -409,12 +409,12 @@ EIF_TYPED_VALUE F1329_12014 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1328, Current, 0, 1, 18777);
+	RTEAA(l_feature_name, 1328, Current, 0, 1, 18867);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1328, Current, 18777);
+	RTDBGEAA(1328, Current, 18867);
 	RTCC(arg1, 1328, l_feature_name, 1, eif_new_type(1330, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -440,10 +440,10 @@ body:;
 	}
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8301, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8357, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(2,1);
 	ur1 = RTCCL(arg1);
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9867, "has_recursively", tr2))(tr2, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9923, "has_recursively", tr2))(tr2, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
@@ -483,7 +483,7 @@ body:;
 }
 
 /* {EV_TREE_NODE_LIST}.recursive_do_all */
-void F1329_12015 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F1329_12050 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "recursive_do_all";
@@ -510,12 +510,12 @@ void F1329_12015 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1328, Current, 0, 1, 18778);
+	RTEAA(l_feature_name, 1328, Current, 0, 1, 18868);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1328, Current, 18778);
+	RTDBGEAA(1328, Current, 18868);
 	{
 		static EIF_TYPE_INDEX typarr0[] = {0xFF01,251,0xFF01,0xFFF9,1,185,0xFF01,1330,0xFFFF};
 		EIF_TYPE typres0;
@@ -536,10 +536,10 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8301, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8357, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(2,1);
 	ur1 = RTCCL(arg1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9868, "recursive_do_all", tr1))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9924, "recursive_do_all", tr1))(tr1, ur1x);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -554,11 +554,11 @@ body:;
 }
 
 /* {EV_TREE_NODE_LIST}.implementation */
-EIF_TYPED_VALUE F1329_12016 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F1329_12051 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(8301,Dtype(Current)));
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(8357,Dtype(Current)));
 	return r;
 }
 

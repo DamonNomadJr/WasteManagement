@@ -65,14 +65,14 @@ void F975_8330 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTGC;
 	RTDBGEAA(974, Current, 14603);
 	RTCC(arg1, 974, l_feature_name, 1, eif_new_type(231, 0x01), 0x01);
-	RTCC(arg2, 974, l_feature_name, 2, eif_new_type(1067, 0x01), 0x01);
+	RTCC(arg2, 974, l_feature_name, 2, eif_new_type(1068, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAA(Current, dtype, 6165, 0xF80000E7, 0); /* name */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(6165, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6166, 0xF800042B, 0); /* type */
+	RTDBGAA(Current, dtype, 6166, 0xF800042C, 0); /* type */
 	RTAR(Current, arg2);
 	*(EIF_REFERENCE *)(Current + RTWA(6166, dtype)) = (EIF_REFERENCE) RTCCL(arg2);
 	RTVI(Current, RTAL);

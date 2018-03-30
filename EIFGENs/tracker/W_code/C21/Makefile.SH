@@ -55,8 +55,11 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C21_c.o 
 
-OLDOBJECTS =  ta1619.o ta1619d.o ta1617.o ta1617d.o ha1620.o ha1620d.o ta1618.o \
-	ta1618d.o ki1621.o ki1621d.o 
+OLDOBJECTS =  fu1620.o fu1620d.o ha1627.o ha1627d.o ta1630.o ta1630d.o in1623.o \
+	in1623d.o ta1628.o ta1628d.o pr1619.o pr1619d.o ha1631.o ha1631d.o \
+	tw1617.o tw1617d.o ac1622.o ac1622d.o ta1629.o ta1629d.o tw1618.o \
+	tw1618d.o kl1624.o kl1624d.o ev1621.o ev1621d.o kl1625.o kl1625d.o \
+	ki1626.o ki1626d.o 
 
 all: Cobj21.o
 

@@ -227,7 +227,7 @@ void F972_8286 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTME(dtype, 0);
 	RTGC;
 	RTDBGEAA(971, Current, 14558);
-	RTCC(arg1, 971, l_feature_name, 1, eif_new_type(1299, 0x01), 0x01);
+	RTCC(arg1, 971, l_feature_name, 1, eif_new_type(1304, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -240,7 +240,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6118, 0xF8000513, 0); /* pixmap */
+	RTDBGAA(Current, dtype, 6118, 0xF8000518, 0); /* pixmap */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(6118, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	if (RTAL & CK_ENSURE) {
@@ -309,7 +309,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6116, 0xF80004B3, 0); /* target */
+	RTDBGAA(Current, dtype, 6116, 0xF80004B6, 0); /* target */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(6116, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	if (RTAL & CK_ENSURE) {

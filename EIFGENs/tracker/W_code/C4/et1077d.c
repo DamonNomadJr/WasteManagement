@@ -1,5 +1,5 @@
 /*
- * Class ETF_ENUM_PARAM
+ * Class ETF_NAMED_PARAM_TYPE
  */
 
 #include "eif_macros.h"
@@ -22,9 +22,10 @@ static const EIF_TYPE_INDEX egt_9_1077 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1077 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1077 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1077 [] = {0xFF01,1076,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1077 [] = {0xFF01,247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1077 [] = {0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1077 [] = {0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1077 [] = {0xFF01,1068,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1077 [] = {0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1077 [] = {0xFF01,231,0xFFFF};
 
 
 static const struct desc_info desc_1077[] = {
@@ -50,7 +51,7 @@ static const struct desc_info desc_1077[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1077), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1077), 15478, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1077), 15507, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1077), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1077), 24, 0xFFFFFFFF},
@@ -60,17 +61,18 @@ static const struct desc_info desc_1077[] = {
 	{EIF_NON_GENERIC(0x0869 /*1076*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1077), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15474, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1077), 15475, 0},
-	{EIF_GENERIC(egt_14_1077), 15476, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1077), 15477, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15502, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1077), 15503, 0},
+	{EIF_GENERIC(egt_14_1077), 15504, 8},
+	{EIF_GENERIC(egt_15_1077), 15505, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_1077), 15506, 0xFFFFFFFF},
 };
 void Init1077(void)
 {
 	IDSC(desc_1077, 0, 1076);
 	IDSC(desc_1077 + 1, 1, 1076);
-	IDSC(desc_1077 + 32, 419, 1076);
-	IDSC(desc_1077 + 34, 414, 1076);
+	IDSC(desc_1077 + 32, 424, 1076);
+	IDSC(desc_1077 + 35, 425, 1076);
 }
 
 

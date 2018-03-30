@@ -1,5 +1,5 @@
 /*
- * Class KL_CASE_INSENSITIVE_STRING_EQUALITY_TESTER
+ * Class KL_IMPORTED_INTEGER_ROUTINES
  */
 
 #include "eif_macros.h"
@@ -22,8 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1151 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1151 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1151 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1151 [] = {0xFF01,1150,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1151 [] = {0xFF01,1188,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1151 [] = {0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1151 [] = {0xFF01,1190,0xFFFF};
 
 
 static const struct desc_info desc_1151[] = {
@@ -59,16 +58,13 @@ static const struct desc_info desc_1151[] = {
 	{EIF_NON_GENERIC(0x08FD /*1150*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1151), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1151), 16695, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0195 /*202*/), 16697, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1151), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1151), 16810, 0xFFFFFFFF},
 };
 void Init1151(void)
 {
 	IDSC(desc_1151, 0, 1150);
 	IDSC(desc_1151 + 1, 1, 1150);
-	IDSC(desc_1151 + 32, 552, 1150);
-	IDSC(desc_1151 + 33, 968, 1150);
+	IDSC(desc_1151 + 32, 563, 1150);
 }
 
 

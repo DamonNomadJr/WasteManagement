@@ -1,5 +1,5 @@
 /*
- * Class ETF_ARRAY_PARAM
+ * Class ETF_COMPOSITE_PARAM_TYPE
  */
 
 #include "eif_macros.h"
@@ -22,9 +22,8 @@ static const EIF_TYPE_INDEX egt_9_1070 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1070 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1070 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1070 [] = {0xFF01,1069,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1070 [] = {0xFF01,1070,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1070 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_1070 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1070 [] = {0xFF01,231,0xFFFF};
 
 
 static const struct desc_info desc_1070[] = {
@@ -50,7 +49,7 @@ static const struct desc_info desc_1070[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1070), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1070), 15452, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1070), 21, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1070), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1070), 24, 0xFFFFFFFF},
@@ -60,17 +59,14 @@ static const struct desc_info desc_1070[] = {
 	{EIF_NON_GENERIC(0x085B /*1069*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1070), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15448, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1070), 15449, 0},
-	{EIF_GENERIC(egt_14_1070), 15450, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1070), 15451, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1070), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1070), 0x00, 0xFFFFFFFF},
 };
 void Init1070(void)
 {
 	IDSC(desc_1070, 0, 1069);
 	IDSC(desc_1070 + 1, 1, 1069);
-	IDSC(desc_1070 + 32, 420, 1069);
-	IDSC(desc_1070 + 34, 414, 1069);
+	IDSC(desc_1070 + 32, 425, 1069);
 }
 
 

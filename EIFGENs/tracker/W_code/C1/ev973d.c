@@ -22,34 +22,34 @@ static const EIF_TYPE_INDEX egt_9_973 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_973 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_973 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_973 [] = {0xFF01,972,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_18_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_19_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_20_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_21_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_22_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_23_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_24_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_25_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_26_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_27_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_28_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_29_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_30_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_31_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_32_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_33_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_34_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_35_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_36_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_37_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_38_973 [] = {0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_39_973 [] = {0xFF01,465,0xFF01,1243,0xFFFF};
-static const EIF_TYPE_INDEX egt_40_973 [] = {0xFF01,966,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_24_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_25_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_26_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_27_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_28_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_29_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_30_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_31_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_32_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_33_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_34_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_35_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_36_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_37_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_38_973 [] = {0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_39_973 [] = {0xFF01,465,0xFF01,1246,0xFFFF};
+static const EIF_TYPE_INDEX egt_40_973 [] = {0xFF01,965,0xFFFF};
 
 
 static const struct desc_info desc_973[] = {
@@ -118,7 +118,7 @@ void Init973(void)
 {
 	IDSC(desc_973, 0, 972);
 	IDSC(desc_973 + 1, 1, 972);
-	IDSC(desc_973 + 32, 516, 972);
+	IDSC(desc_973 + 32, 507, 972);
 }
 
 

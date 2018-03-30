@@ -1,5 +1,5 @@
 /*
- * Class KL_IMPORTED_CHARACTER_ROUTINES
+ * Class KL_SHARED_OPERATING_SYSTEM
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1005 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1005 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1005 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1005 [] = {0xFF01,1004,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1005 [] = {0xFF01,1019,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1005 [] = {0xFF01,959,0xFFFF};
 
 
 static const struct desc_info desc_1005[] = {
@@ -58,13 +58,13 @@ static const struct desc_info desc_1005[] = {
 	{EIF_NON_GENERIC(0x07D9 /*1004*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1005), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1005), 14854, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1005), 14887, 0xFFFFFFFF},
 };
 void Init1005(void)
 {
 	IDSC(desc_1005, 0, 1004);
 	IDSC(desc_1005 + 1, 1, 1004);
-	IDSC(desc_1005 + 32, 782, 1004);
+	IDSC(desc_1005 + 32, 796, 1004);
 }
 
 

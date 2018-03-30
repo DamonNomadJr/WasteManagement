@@ -1,5 +1,5 @@
 /*
- * Class ETF_CHAR_ARG
+ * Class ETF_PRIMITIVE_ARG
  */
 
 #include "eif_macros.h"
@@ -48,7 +48,7 @@ static const struct desc_info desc_1089[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1089), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1089), 15529, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1089), 21, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1089), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1089), 24, 0xFFFFFFFF},
@@ -58,17 +58,14 @@ static const struct desc_info desc_1089[] = {
 	{EIF_NON_GENERIC(0x0881 /*1088*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1089), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1089), 15516, 0},
-	{EIF_GENERIC(NULL), 15517, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15527, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0189 /*196*/), 15528, 8},
+	{EIF_GENERIC(egt_13_1089), 15550, 0},
+	{EIF_GENERIC(NULL), 15551, 0xFFFFFFFF},
 };
 void Init1089(void)
 {
 	IDSC(desc_1089, 0, 1088);
 	IDSC(desc_1089 + 1, 1, 1088);
-	IDSC(desc_1089 + 32, 395, 1088);
-	IDSC(desc_1089 + 34, 432, 1088);
+	IDSC(desc_1089 + 32, 392, 1088);
 }
 
 

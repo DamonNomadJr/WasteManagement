@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C3_c.o 
 
-OLDOBJECTS =  es1042.o es1042d.o es1038.o es1038d.o es1041.o es1041d.o es1040.o \
-	es1040d.o et1036.o et1036d.o et1034.o et1034d.o et1039.o et1039d.o \
-	es1037.o es1037d.o et1035.o et1035d.o et1033.o et1033d.o yy1031.o \
-	yy1031d.o ev1030.o ev1030d.o yy1029.o yy1029d.o ev1055.o ev1055d.o \
-	ev1028.o ev1028d.o ev1027.o ev1027d.o gr1026.o gr1026d.o ev1024.o \
-	ev1024d.o ev1054.o ev1054d.o ev1053.o ev1053d.o ev1023.o ev1023d.o \
-	ev1052.o ev1052d.o ki1045.o ki1045d.o ev1050.o ev1050d.o ev1049.o \
-	ev1049d.o ev1048.o ev1048d.o uc1047.o uc1047d.o uc1046.o uc1046d.o \
-	ki1044.o ki1044d.o yy1032.o yy1032d.o rt1051.o rt1051d.o ev1025.o \
-	ev1025d.o uc1043.o uc1043d.o 
+OLDOBJECTS =  es1043.o es1043d.o es1039.o es1039d.o es1042.o es1042d.o es1041.o \
+	es1041d.o et1037.o et1037d.o et1035.o et1035d.o et1040.o et1040d.o \
+	es1038.o es1038d.o et1036.o et1036d.o et1034.o et1034d.o yy1032.o \
+	yy1032d.o ev1031.o ev1031d.o yy1030.o yy1030d.o ev1029.o ev1029d.o \
+	ev1028.o ev1028d.o gr1027.o gr1027d.o ev1025.o ev1025d.o ev1055.o \
+	ev1055d.o ev1054.o ev1054d.o ev1024.o ev1024d.o ev1023.o ev1023d.o \
+	ev1053.o ev1053d.o ki1046.o ki1046d.o ev1052.o ev1052d.o ev1050.o \
+	ev1050d.o ev1049.o ev1049d.o uc1048.o uc1048d.o uc1047.o uc1047d.o \
+	ki1045.o ki1045d.o yy1033.o yy1033d.o ev1026.o ev1026d.o rt1051.o \
+	rt1051d.o uc1044.o uc1044d.o 
 
 all: Cobj3.o
 

@@ -1,5 +1,5 @@
 /*
- * Class ETF_FILE_UTILITY
+ * Class reference ETF_MODEL_ACCESS
  */
 
 #include "eif_macros.h"
@@ -10,7 +10,7 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_981 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_981 [] = {0xFF01,244,980,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_981 [] = {0xFF01,1574,980,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_981 [] = {0xFF01,980,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_981 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_981 [] = {0,0xFFFF};
@@ -22,13 +22,12 @@ static const EIF_TYPE_INDEX egt_9_981 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_981 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_981 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_981 [] = {0xFF01,980,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_981 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_981 [] = {0xFF01,284,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_981 [] = {0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_981 [] = {0xFF01,980,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_981 [] = {0xFF01,978,0xFFFF};
 
 
 static const struct desc_info desc_981[] = {
-	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 14735, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_981), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_981), 1, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0195 /*202*/), 2, 0xFFFFFFFF},
@@ -57,21 +56,16 @@ static const struct desc_info desc_981[] = {
 	{EIF_GENERIC(NULL), 25, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x07A9 /*980*/), 28, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_12_981), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_12_981), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0195 /*202*/), 14702, 16},
-	{EIF_GENERIC(egt_13_981), 14703, 0},
-	{EIF_GENERIC(egt_14_981), 14704, 8},
-	{EIF_GENERIC(egt_15_981), 14705, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 14706, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 14707, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_981), 30, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_981), 14734, 0xFFFFFFFF},
 };
 void Init981(void)
 {
 	IDSC(desc_981, 0, 980);
 	IDSC(desc_981 + 1, 1, 980);
-	IDSC(desc_981 + 32, 364, 980);
+	IDSC(desc_981 + 32, 372, 980);
 }
 
 

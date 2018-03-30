@@ -23,7 +23,7 @@ extern EIF_TYPED_VALUE F958_7087(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F958_7088(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F958_7089(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F958_7090(EIF_REFERENCE);
-extern void F958_16263(EIF_REFERENCE, int);
+extern void F958_16323(EIF_REFERENCE, int);
 extern void EIF_Minit958(void);
 
 #ifdef __cplusplus
@@ -470,7 +470,7 @@ EIF_TYPED_VALUE F958_7090 (EIF_REFERENCE Current)
 }
 
 /* {EV_TEXT_ALIGNMENT}._invariant */
-void F958_16263 (EIF_REFERENCE Current, int where)
+void F958_16323 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -488,7 +488,7 @@ void F958_16263 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 957, Current, 0, 16262);
+	RTEAINV(l_feature_name, 957, Current, 0, 16322);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("alignment_code_within_range", Current);

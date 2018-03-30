@@ -1,5 +1,5 @@
 /*
- * Class EV_DOCKABLE_TARGET_ACTION_SEQUENCES_I
+ * Class EV_CONTAINER_ACTION_SEQUENCES_I
  */
 
 #include "eif_macros.h"
@@ -58,14 +58,14 @@ static const struct desc_info desc_1012[] = {
 	{EIF_NON_GENERIC(0x07E7 /*1011*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1012), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1012), 14888, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08E3 /*1137*/), 14889, 0},
+	{EIF_GENERIC(egt_13_1012), 14905, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x08E3 /*1137*/), 14906, 0},
 };
 void Init1012(void)
 {
 	IDSC(desc_1012, 0, 1011);
 	IDSC(desc_1012 + 1, 1, 1011);
-	IDSC(desc_1012 + 32, 734, 1011);
+	IDSC(desc_1012 + 32, 761, 1011);
 }
 
 

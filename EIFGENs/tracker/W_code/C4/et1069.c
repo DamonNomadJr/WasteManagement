@@ -1,5 +1,5 @@
 /*
- * Code for class ETF_COMPOSITE_PARAM_TYPE
+ * Code for class ETF_PARAM_TYPE
  */
 
 #include "eif_eiffel.h"

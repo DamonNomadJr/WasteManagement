@@ -1,5 +1,5 @@
 /*
- * Class KL_CHARACTER_ROUTINES
+ * Class KL_SHARED_PLATFORM
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1020 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1020 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1020 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1020 [] = {0xFF01,1019,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1020 [] = {0xFF01,1127,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1020 [] = {0xFF01,1130,0xFFFF};
 
 
 static const struct desc_info desc_1020[] = {
@@ -58,20 +58,13 @@ static const struct desc_info desc_1020[] = {
 	{EIF_NON_GENERIC(0x07F7 /*1019*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1020), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1020), 14917, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0195 /*202*/), 14918, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0195 /*202*/), 14919, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0189 /*196*/), 14920, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0189 /*196*/), 14921, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0189 /*196*/), 14922, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0189 /*196*/), 14923, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1020), 14951, 0xFFFFFFFF},
 };
 void Init1020(void)
 {
 	IDSC(desc_1020, 0, 1019);
 	IDSC(desc_1020 + 1, 1, 1019);
-	IDSC(desc_1020 + 32, 559, 1019);
-	IDSC(desc_1020 + 33, 854, 1019);
+	IDSC(desc_1020 + 32, 562, 1019);
 }
 
 

@@ -1,5 +1,5 @@
 /*
- * Class UC_IMPORTED_UTF16_ROUTINES
+ * Class UC_IMPORTED_UTF32_ROUTINES
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1047 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1047 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1047 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1047 [] = {0xFF01,1046,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1047 [] = {0xFF01,1186,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1047 [] = {0xFF01,1188,0xFFFF};
 
 
 static const struct desc_info desc_1047[] = {
@@ -58,13 +58,13 @@ static const struct desc_info desc_1047[] = {
 	{EIF_NON_GENERIC(0x082D /*1046*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1047), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1047), 15218, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1047), 15251, 0xFFFFFFFF},
 };
 void Init1047(void)
 {
 	IDSC(desc_1047, 0, 1046);
 	IDSC(desc_1047 + 1, 1, 1046);
-	IDSC(desc_1047 + 32, 784, 1046);
+	IDSC(desc_1047 + 32, 788, 1046);
 }
 
 

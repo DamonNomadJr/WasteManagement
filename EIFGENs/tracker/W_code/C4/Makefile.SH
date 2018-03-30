@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C4_c.o 
 
-OLDOBJECTS =  et1084.o et1084d.o et1083.o et1083d.o et1087.o et1087d.o et1085.o \
-	et1085d.o et1082.o et1082d.o ti1061.o ti1061d.o et1068.o et1068d.o \
+OLDOBJECTS =  et1085.o et1085d.o et1084.o et1084d.o et1088.o et1088d.o et1086.o \
+	et1086d.o et1083.o et1083d.o ti1062.o ti1062d.o et1082.o et1082d.o \
 	et1081.o et1081d.o et1080.o et1080d.o et1079.o et1079d.o et1078.o \
-	et1078d.o et1077.o et1077d.o et1070.o et1070d.o et1076.o et1076d.o \
-	et1071.o et1071d.o et1075.o et1075d.o et1074.o et1074d.o et1088.o \
-	et1088d.o et1086.o et1086d.o et1073.o et1073d.o et1072.o et1072d.o \
-	da1062.o da1062d.o da1065.o da1065d.o da1064.o da1064d.o ti1060.o \
-	ti1060d.o ti1059.o ti1059d.o et1069.o et1069d.o kl1067.o kl1067d.o \
-	kl1066.o kl1066d.o da1063.o da1063d.o ti1058.o ti1058d.o co1057.o \
-	co1057d.o ev1056.o ev1056d.o 
+	et1078d.o et1071.o et1071d.o et1077.o et1077d.o et1069.o et1069d.o \
+	et1087.o et1087d.o et1076.o et1076d.o et1075.o et1075d.o et1072.o \
+	et1072d.o et1074.o et1074d.o et1073.o et1073d.o da1065.o da1065d.o \
+	da1063.o da1063d.o da1066.o da1066d.o ti1061.o ti1061d.o ti1060.o \
+	ti1060d.o et1070.o et1070d.o kl1068.o kl1068d.o kl1067.o kl1067d.o \
+	ev1057.o ev1057d.o da1064.o da1064d.o ti1059.o ti1059d.o co1058.o \
+	co1058d.o ev1056.o ev1056d.o 
 
 all: Cobj4.o
 

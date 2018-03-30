@@ -40,16 +40,16 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C9_c.o 
 
-OLDOBJECTS =  et1252.o et1252d.o ev1251.o ev1251d.o ev1247.o ev1247d.o ev1246.o \
-	ev1246d.o ev1245.o ev1245d.o ev1236.o ev1236d.o ev1234.o ev1234d.o \
-	ev1244.o ev1244d.o ev1243.o ev1243d.o ev1242.o ev1242d.o ev1253.o \
-	ev1253d.o ev1233.o ev1233d.o ev1250.o ev1250d.o ev1232.o ev1232d.o \
-	ev1231.o ev1231d.o ev1230.o ev1230d.o ev1241.o ev1241d.o ev1240.o \
-	ev1240d.o ev1229.o ev1229d.o ev1239.o ev1239d.o ev1235.o ev1235d.o \
-	ev1228.o ev1228d.o ev1227.o ev1227d.o ev1226.o ev1226d.o ev1225.o \
-	ev1225d.o ev1224.o ev1224d.o ev1249.o ev1249d.o ev1223.o ev1223d.o \
-	ev1238.o ev1238d.o ev1222.o ev1222d.o ev1248.o ev1248d.o ev1221.o \
-	ev1221d.o ev1237.o ev1237d.o 
+OLDOBJECTS =  ev1250.o ev1250d.o ev1249.o ev1249d.o ev1248.o ev1248d.o ev1239.o \
+	ev1239d.o ev1237.o ev1237d.o ev1247.o ev1247d.o ev1246.o ev1246d.o \
+	ev1245.o ev1245d.o ev1236.o ev1236d.o ev1235.o ev1235d.o ev1253.o \
+	ev1253d.o ev1244.o ev1244d.o ev1238.o ev1238d.o ev1234.o ev1234d.o \
+	ev1233.o ev1233d.o ev1243.o ev1243d.o ev1242.o ev1242d.o ev1232.o \
+	ev1232d.o ev1231.o ev1231d.o ev1230.o ev1230d.o ev1229.o ev1229d.o \
+	ev1228.o ev1228d.o ev1227.o ev1227d.o ev1241.o ev1241d.o ev1252.o \
+	ev1252d.o ev1226.o ev1226d.o ev1225.o ev1225d.o ev1251.o ev1251d.o \
+	ev1224.o ev1224d.o ev1223.o ev1223d.o ev1240.o ev1240d.o ev1222.o \
+	ev1222d.o ev1221.o ev1221d.o 
 
 all: Cobj9.o
 

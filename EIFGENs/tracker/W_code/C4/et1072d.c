@@ -1,5 +1,5 @@
 /*
- * Class ETF_BOOL_PARAM
+ * Class ETF_PRIMITIVE_PARAM_TYPE
  */
 
 #include "eif_macros.h"
@@ -49,7 +49,7 @@ static const struct desc_info desc_1072[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1072), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1072), 15455, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1072), 21, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1072), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1072), 24, 0xFFFFFFFF},
@@ -59,14 +59,14 @@ static const struct desc_info desc_1072[] = {
 	{EIF_NON_GENERIC(0x085F /*1071*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1072), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1072), 15453, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1072), 15454, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1072), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1072), 0x00, 0xFFFFFFFF},
 };
 void Init1072(void)
 {
 	IDSC(desc_1072, 0, 1071);
 	IDSC(desc_1072 + 1, 1, 1071);
-	IDSC(desc_1072 + 32, 414, 1071);
+	IDSC(desc_1072 + 32, 425, 1071);
 }
 
 

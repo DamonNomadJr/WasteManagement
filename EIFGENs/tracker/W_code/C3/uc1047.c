@@ -1,5 +1,5 @@
 /*
- * Code for class UC_IMPORTED_UTF16_ROUTINES
+ * Code for class UC_IMPORTED_UTF32_ROUTINES
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1047_8965(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1047_8998(EIF_REFERENCE);
 extern void EIF_Minit1047(void);
 
 #ifdef __cplusplus
@@ -32,12 +32,12 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {UC_IMPORTED_UTF16_ROUTINES}.utf16 */
-RTOID (F1047_8965)
-EIF_TYPED_VALUE F1047_8965 (EIF_REFERENCE Current)
+/* {UC_IMPORTED_UTF32_ROUTINES}.utf32 */
+RTOID (F1047_8998)
+EIF_TYPED_VALUE F1047_8998 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "utf16";
+	char *l_feature_name = "utf32";
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
 	RTCDD;
@@ -46,7 +46,7 @@ EIF_TYPED_VALUE F1047_8965 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F1047_8965);
+	RTOTDR(F1047_8998);
 	dtype = Dtype(Current);
 
 	RTLI(2);
@@ -56,23 +56,23 @@ EIF_TYPED_VALUE F1047_8965 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1046, Current, 0, 0, 15218);
+	RTEAA(l_feature_name, 1046, Current, 0, 0, 15251);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1046, Current, 15218);
+	RTDBGEAA(1046, Current, 15251);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF80004A2, 0,0); /* Result */
-	tr1 = RTLN(eif_new_type(1186, 0x01).id);
+	RTDBGAL(Current, 0, 0xF80004A4, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(1188, 0x01).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(32, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
-		RTCT("utf16_not_void", EX_POST);
+		RTCT("utf32_not_void", EX_POST);
 		if ((EIF_BOOLEAN)(Result != NULL)) {
 			RTCK;
 		} else {
@@ -95,7 +95,7 @@ EIF_TYPED_VALUE F1047_8965 (EIF_REFERENCE Current)
 void EIF_Minit1047 (void)
 {
 	GTCX
-	RTOTS (8965,F1047_8965)
+	RTOTS (8998,F1047_8998)
 }
 
 

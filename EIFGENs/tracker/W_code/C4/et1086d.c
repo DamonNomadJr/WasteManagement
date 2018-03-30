@@ -1,5 +1,5 @@
 /*
- * Class ETF_COMPOSITE_ARG
+ * Class ETF_EVT_ARG
  */
 
 #include "eif_macros.h"
@@ -23,7 +23,6 @@ static const EIF_TYPE_INDEX egt_10_1086 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1086 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1086 [] = {0xFF01,1085,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1086 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1086 [] = {0xFF01,247,0xFF01,1084,0xFFFF};
 
 
 static const struct desc_info desc_1086[] = {
@@ -59,16 +58,14 @@ static const struct desc_info desc_1086[] = {
 	{EIF_NON_GENERIC(0x087B /*1085*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1086), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1086), 15516, 0},
-	{EIF_GENERIC(NULL), 15517, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1086), 15518, 8},
+	{EIF_GENERIC(egt_13_1086), 15550, 0},
+	{EIF_GENERIC(NULL), 15551, 0xFFFFFFFF},
 };
 void Init1086(void)
 {
 	IDSC(desc_1086, 0, 1085);
 	IDSC(desc_1086 + 1, 1, 1085);
-	IDSC(desc_1086 + 32, 395, 1085);
-	IDSC(desc_1086 + 34, 429, 1085);
+	IDSC(desc_1086 + 32, 392, 1085);
 }
 
 

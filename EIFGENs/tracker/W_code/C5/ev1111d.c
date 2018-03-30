@@ -1,5 +1,5 @@
 /*
- * Class EV_GTK_TEXT_ITER_STRUCT
+ * Class EV_GTK_TREE_ITER_STRUCT
  */
 
 #include "eif_macros.h"
@@ -62,7 +62,7 @@ static const struct desc_info desc_1111[] = {
 	{EIF_NON_GENERIC(0x0195 /*202*/), 1075, 8},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 1076, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0195 /*202*/), 1077, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x01B3 /*217*/), 15881, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01B3 /*217*/), 15914, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 1078, 16},
 	{EIF_NON_GENERIC(0x0155 /*170*/), 1079, 0},
 };

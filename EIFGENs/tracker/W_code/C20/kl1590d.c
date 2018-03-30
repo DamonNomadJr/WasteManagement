@@ -1,5 +1,5 @@
 /*
- * Class KL_LINKABLE [CHARACTER_8]
+ * Class KL_SPECIAL_ROUTINES [G#1]
  */
 
 #include "eif_macros.h"
@@ -10,22 +10,27 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_1590 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_1590 [] = {0xFF01,244,1589,196,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_1590 [] = {0xFF01,1589,196,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_1590 [] = {0xFF01,244,1589,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_1590 [] = {0xFF01,1589,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_1590 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_1590 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_1590 [] = {0xFF01,1589,196,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_1590 [] = {0xFF01,1589,196,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_1590 [] = {0xFF01,1589,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_1590 [] = {0xFF01,1589,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_1590 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_8_1590 [] = {0xFF01,14,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_1590 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1590 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1590 [] = {0xFF01,15,0xFFFF};
-static const EIF_TYPE_INDEX egt_12_1590 [] = {1589,196,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1590 [] = {0xFF01,1589,196,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1590 [] = {0xFFF8,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1590 [] = {0xFFF8,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1590 [] = {1589,196,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_1590 [] = {1589,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1590 [] = {0xFF01,1589,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_1590 [] = {0xFF01,250,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_1590 [] = {0xFFF8,1,0xFFFF};
 
 
 static const struct desc_info desc_1590[] = {
@@ -61,20 +66,23 @@ static const struct desc_info desc_1590[] = {
 	{EIF_GENERIC(egt_12_1590), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_1590), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1590), 14980, 8},
-	{EIF_GENERIC(NULL), 14981, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 14982, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1590), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_16_1590), 14986, 0},
-	{EIF_GENERIC(NULL), 14987, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 14988, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1590), 14620, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_15_1590), 14621, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_1590), 14622, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_17_1590), 14623, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 14624, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 14625, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 14616, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_1590), 14617, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_19_1590), 14618, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_20_1590), 14619, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_21_1590), 0x00, 0xFFFFFFFF},
 };
 void Init1590(void)
 {
 	IDSC(desc_1590, 0, 1589);
 	IDSC(desc_1590 + 1, 1, 1589);
-	IDSC(desc_1590 + 32, 676, 1589);
-	IDSC(desc_1590 + 36, 556, 1589);
+	IDSC(desc_1590 + 32, 439, 1589);
 }
 
 

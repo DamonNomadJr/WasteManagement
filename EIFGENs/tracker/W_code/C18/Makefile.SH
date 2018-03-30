@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C18_c.o 
 
-OLDOBJECTS =  da1547.o da1547d.o ti1545.o ti1545d.o da1543.o da1543d.o da1550.o \
-	da1550d.o da1546.o da1546d.o ti1544.o ti1544d.o kl1533.o kl1533d.o \
-	da1549.o da1549d.o fi1542.o fi1542d.o da1548.o da1548d.o kl1532.o \
-	kl1532d.o yy1524.o yy1524d.o kl1527.o kl1527d.o yy1523.o yy1523d.o \
-	kl1529.o kl1529d.o kl1534.o kl1534d.o kl1525.o kl1525d.o yy1522.o \
-	yy1522d.o ev1537.o ev1537d.o kl1528.o kl1528d.o kl1539.o kl1539d.o \
-	kl1541.o kl1541d.o kl1540.o kl1540d.o kl1526.o kl1526d.o ki1538.o \
-	ki1538d.o kl1531.o kl1531d.o kl1536.o kl1536d.o kl1535.o kl1535d.o \
-	kl1530.o kl1530d.o uc1520.o uc1520d.o kl1521.o kl1521d.o uc1519.o \
-	uc1519d.o uc1518.o uc1518d.o 
+OLDOBJECTS =  da1550.o da1550d.o ti1548.o ti1548d.o da1546.o da1546d.o da1549.o \
+	da1549d.o ti1547.o ti1547d.o kl1536.o kl1536d.o fi1545.o fi1545d.o \
+	kl1535.o kl1535d.o yy1527.o yy1527d.o ev1518.o ev1518d.o kl1530.o \
+	kl1530d.o yy1526.o yy1526d.o kl1532.o kl1532d.o kl1537.o kl1537d.o \
+	kl1528.o kl1528d.o yy1525.o yy1525d.o ev1540.o ev1540d.o kl1531.o \
+	kl1531d.o kl1542.o kl1542d.o kl1544.o kl1544d.o kl1543.o kl1543d.o \
+	kl1529.o kl1529d.o ki1541.o ki1541d.o kl1539.o kl1539d.o kl1534.o \
+	kl1534d.o kl1538.o kl1538d.o kl1533.o kl1533d.o uc1523.o uc1523d.o \
+	kl1524.o kl1524d.o uc1522.o uc1522d.o uc1521.o uc1521d.o uc1520.o \
+	uc1520d.o uc1519.o uc1519d.o 
 
 all: Cobj18.o
 

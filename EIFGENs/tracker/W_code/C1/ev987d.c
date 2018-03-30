@@ -1,5 +1,5 @@
 /*
- * Class EV_TREE_NODE_ACTION_SEQUENCES_I
+ * Class EV_MULTI_COLUMN_LIST_ACTION_SEQUENCES_I
  */
 
 #include "eif_macros.h"
@@ -22,10 +22,10 @@ static const EIF_TYPE_INDEX egt_9_987 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_987 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_987 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_987 [] = {0xFF01,986,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_987 [] = {0xFF01,1146,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_987 [] = {0xFF01,1146,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_987 [] = {0xFF01,1146,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_987 [] = {0xFF01,1146,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_987 [] = {0xFF01,1134,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_987 [] = {0xFF01,1134,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_987 [] = {0xFF01,1135,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_987 [] = {0xFF01,1135,0xFFFF};
 
 
 static const struct desc_info desc_987[] = {
@@ -61,20 +61,20 @@ static const struct desc_info desc_987[] = {
 	{EIF_NON_GENERIC(0x07B5 /*986*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_987), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_987), 14732, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F5 /*1146*/), 14733, 0},
-	{EIF_GENERIC(egt_14_987), 14734, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F5 /*1146*/), 14735, 8},
-	{EIF_GENERIC(egt_15_987), 14736, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F5 /*1146*/), 14737, 16},
-	{EIF_GENERIC(egt_16_987), 14738, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F5 /*1146*/), 14739, 24},
+	{EIF_GENERIC(egt_13_987), 14762, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x08DD /*1134*/), 14763, 0},
+	{EIF_GENERIC(egt_14_987), 14764, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x08DD /*1134*/), 14765, 8},
+	{EIF_GENERIC(egt_15_987), 14766, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x08DF /*1135*/), 14767, 16},
+	{EIF_GENERIC(egt_16_987), 14768, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x08DF /*1135*/), 14769, 24},
 };
 void Init987(void)
 {
 	IDSC(desc_987, 0, 986);
 	IDSC(desc_987 + 1, 1, 986);
-	IDSC(desc_987 + 32, 953, 986);
+	IDSC(desc_987 + 32, 966, 986);
 }
 
 

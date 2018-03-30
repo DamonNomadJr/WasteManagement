@@ -1,5 +1,5 @@
 /*
- * Class ETF_COMPOSITE_PARAM_TYPE
+ * Class ETF_PARAM_TYPE
  */
 
 #include "eif_macros.h"
@@ -66,7 +66,7 @@ void Init1069(void)
 {
 	IDSC(desc_1069, 0, 1068);
 	IDSC(desc_1069 + 1, 1, 1068);
-	IDSC(desc_1069 + 32, 414, 1068);
+	IDSC(desc_1069 + 32, 425, 1068);
 }
 
 

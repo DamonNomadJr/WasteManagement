@@ -1,5 +1,5 @@
 /*
- * Code for class KL_BINARY_INPUT_FILE
+ * Code for class KL_WINDOWS_OUTPUT_FILE
  */
 
 #include "eif_eiffel.h"
@@ -10,8 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1534_15430(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F1534_15431(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1534_15462(EIF_REFERENCE);
 extern void EIF_Minit1534(void);
 
 #ifdef __cplusplus
@@ -33,29 +32,20 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {KL_BINARY_INPUT_FILE}.last_character */
-EIF_TYPED_VALUE F1534_15430 (EIF_REFERENCE Current)
+/* {KL_WINDOWS_OUTPUT_FILE}.eol */
+RTOID (F1534_15462)
+
+
+EIF_TYPED_VALUE F1534_15462 (EIF_REFERENCE Current)
 {
-	EIF_TYPED_VALUE r;
-	r.type = SK_CHAR8;
-	r.it_c1 = *(EIF_CHARACTER_8 *)(Current + RTWA(11295,Dtype(Current)));
-	return r;
+	GTCX
+	RTOTC (F1534_15462,21651,RTMS_EX_H("\015\012",2,3338));
 }
-
-
-/* {KL_BINARY_INPUT_FILE}.last_string */
-EIF_TYPED_VALUE F1534_15431 (EIF_REFERENCE Current)
-{
-	EIF_TYPED_VALUE r;
-	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(11294,Dtype(Current)));
-	return r;
-}
-
 
 void EIF_Minit1534 (void)
 {
 	GTCX
+	RTOTS (15462,F1534_15462)
 }
 
 

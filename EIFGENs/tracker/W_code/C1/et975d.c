@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_975 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_975 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_975 [] = {0xFF01,974,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_975 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_975 [] = {0xFF01,1067,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_975 [] = {0xFF01,1068,0xFFFF};
 
 
 static const struct desc_info desc_975[] = {
@@ -67,7 +67,7 @@ void Init975(void)
 {
 	IDSC(desc_975, 0, 974);
 	IDSC(desc_975 + 1, 1, 974);
-	IDSC(desc_975 + 32, 446, 974);
+	IDSC(desc_975 + 32, 449, 974);
 }
 
 

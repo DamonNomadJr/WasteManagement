@@ -1,5 +1,5 @@
 /*
- * Code for class EV_GTK_TEXT_ITER_STRUCT
+ * Code for class EV_GTK_TREE_ITER_STRUCT
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1111_9656(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1111_9689(EIF_REFERENCE);
 extern void EIF_Minit1111(void);
 
 #ifdef __cplusplus
@@ -33,8 +33,8 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {EV_GTK_TEXT_ITER_STRUCT}.structure_size */
-EIF_TYPED_VALUE F1111_9656 (EIF_REFERENCE Current)
+/* {EV_GTK_TREE_ITER_STRUCT}.structure_size */
+EIF_TYPED_VALUE F1111_9689 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "structure_size";
@@ -52,13 +52,13 @@ EIF_TYPED_VALUE F1111_9656 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1110, Current, 0, 0, 15881);
+	RTEAA(l_feature_name, 1110, Current, 0, 0, 15914);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(1110, Current, 15881);
+	RTDBGEAA(1110, Current, 15914);
 	RTIV(Current, RTAL);
-	Result = (EIF_INTEGER_32) sizeof(GtkTextIter);
+	Result = (EIF_INTEGER_32) sizeof(GtkTreeIter);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(1);
 		RTCT("positive_result", EX_POST);

@@ -40,14 +40,14 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C1_c.o 
 
-OLDOBJECTS =  et981.o et981d.o et979.o et979d.o et980.o et980d.o et978.o et978d.o \
-	c_977.o c_977d.o va976.o va976d.o et975.o et975d.o et974.o et974d.o \
-	ev973.o ev973d.o ev972.o ev972d.o ev971.o ev971d.o kl970.o kl970d.o \
-	ev969.o ev969d.o ev968.o ev968d.o ev967.o ev967d.o gt966.o gt966d.o \
-	gt965.o gt965d.o kl964.o kl964d.o ev963.o ev963d.o ev962.o ev962d.o \
-	ev961.o ev961d.o kl960.o kl960d.o ev959.o ev959d.o ev989.o ev989d.o \
-	ev958.o ev958d.o ev988.o ev988d.o ev987.o ev987d.o ev986.o ev986d.o \
-	ev985.o ev985d.o ev984.o ev984d.o ev983.o ev983d.o ev982.o ev982d.o 
+OLDOBJECTS =  et987.o et987d.o et985.o et985d.o et986.o et986d.o et984.o et984d.o \
+	er983.o er983d.o op982.o op982d.o hi981.o hi981d.o c_980.o c_980d.o \
+	va979.o va979d.o ph978.o ph978d.o ma977.o ma977d.o et976.o et976d.o \
+	et975.o et975d.o ma974.o ma974d.o ev973.o ev973d.o ev972.o ev972d.o \
+	ev971.o ev971d.o kl970.o kl970d.o gt969.o gt969d.o gt968.o gt968d.o \
+	ev967.o ev967d.o ev966.o ev966d.o ev965.o ev965d.o kl964.o kl964d.o \
+	ev963.o ev963d.o ev962.o ev962d.o ev961.o ev961d.o kl960.o kl960d.o \
+	ev959.o ev959d.o ev958.o ev958d.o ev989.o ev989d.o ev988.o ev988d.o 
 
 all: Cobj1.o
 

@@ -1,5 +1,5 @@
 /*
- * Class ETF_NAMED_PARAM_TYPE
+ * Class ETF_ARRAY_PARAM
  */
 
 #include "eif_macros.h"
@@ -22,10 +22,9 @@ static const EIF_TYPE_INDEX egt_9_1076 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1076 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1076 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1076 [] = {0xFF01,1075,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1076 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1076 [] = {0xFF01,1067,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1076 [] = {0xFF01,1076,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1076 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1076 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1076 [] = {0xFF01,231,0xFFFF};
 
 
 static const struct desc_info desc_1076[] = {
@@ -51,7 +50,7 @@ static const struct desc_info desc_1076[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1076), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1076), 15472, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1076), 15557, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1076), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1076), 24, 0xFFFFFFFF},
@@ -61,18 +60,17 @@ static const struct desc_info desc_1076[] = {
 	{EIF_NON_GENERIC(0x0867 /*1075*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1076), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15473, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1076), 15468, 0},
-	{EIF_GENERIC(egt_14_1076), 15469, 8},
-	{EIF_GENERIC(egt_15_1076), 15470, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_16_1076), 15471, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15553, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1076), 15554, 0},
+	{EIF_GENERIC(egt_14_1076), 15555, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_15_1076), 15556, 0xFFFFFFFF},
 };
 void Init1076(void)
 {
 	IDSC(desc_1076, 0, 1075);
 	IDSC(desc_1076 + 1, 1, 1075);
 	IDSC(desc_1076 + 32, 421, 1075);
-	IDSC(desc_1076 + 35, 414, 1075);
+	IDSC(desc_1076 + 34, 424, 1075);
 }
 
 

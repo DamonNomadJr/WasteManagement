@@ -1,0 +1,319 @@
+  state 0 ok
+  max_phase_radiation: 0.00, max_container_radiation: 0.00
+  phases: pid->name:capacity,count,radiation
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 1
+  0 ok 
+
+->new_tracker(90,80)
+  state 1 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 1
+  1 ok 
+
+->new_phase("pid1","compacting",2,<<glass, metal, plastic>>)
+  state 2 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 2
+  1 ok 
+  2 ok 
+
+->new_phase("pid2","unpacking",3,<<metal, plastic>>)
+  state 3 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 3
+  1 ok 
+  2 ok 
+  3 ok 
+
+->new_phase("pid3","packing",5,<<liquid, glass, plastic>>)
+  state 4 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+    pid3->packing:5,0,0.00,{liquid,glass,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 4
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+
+->undo
+  state 5 (to 3) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 3
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+
+->redo
+  state 6 (to 4) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+    pid3->packing:5,0,0.00,{liquid,glass,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 4
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+
+->remove_phase("pid3")
+  state 7 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 5
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+
+->undo
+  state 8 (to 4) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 4
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+
+->redo
+  state 9 (to 7) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,0,0.00,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+  HISTORY: curr_head: 5
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+
+->new_container("cid0",[glass, 0.5],"pid1")
+  state 10 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,1,0.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+  HISTORY: curr_head: 6
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+
+->new_container("cid2",[plastic, 1],"pid2")
+  state 11 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,1,0.50,{glass,metal,plastic}
+    pid2->unpacking:3,1,1.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid2->plastic,1.00
+  HISTORY: curr_head: 7
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+
+->undo
+  state 12 (to 10) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,1,0.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+  HISTORY: curr_head: 6
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+
+->redo
+  state 13 (to 11) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,1,0.50,{glass,metal,plastic}
+    pid2->unpacking:3,1,1.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid2->plastic,1.00
+  HISTORY: curr_head: 7
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+
+->move_container("cid2","pid2","pid1")
+  state 14 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid1->plastic,1.00
+  HISTORY: curr_head: 8
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  14 ok 
+
+->undo
+  state 15 (to 11) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid1->plastic,1.00
+  HISTORY: curr_head: 7
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  14 ok 
+
+->redo
+  state 16 (to 14) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid1->plastic,1.00
+  HISTORY: curr_head: 8
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  14 ok 
+
+->undo
+  state 17 (to 11) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+    cid2->pid1->plastic,1.00
+  HISTORY: curr_head: 7
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  14 ok 
+
+->remove_container("cid2")
+  state 18 ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+  HISTORY: curr_head: 8
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  18 ok 
+
+->undo
+  state 19 (to 11) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+  HISTORY: curr_head: 7
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  18 ok 
+
+->redo
+  state 20 (to 18) ok
+  max_phase_radiation: 90.00, max_container_radiation: 80.00
+  phases: pid->name:capacity,count,radiation
+    pid1->compacting:2,2,1.50,{glass,metal,plastic}
+    pid2->unpacking:3,0,0.00,{metal,plastic}
+  containers: cid->pid->material,radioactivity
+    cid0->pid1->glass,0.50
+  HISTORY: curr_head: 8
+  1 ok 
+  2 ok 
+  3 ok 
+  4 ok 
+  7 ok 
+  10 ok 
+  11 ok 
+  18 ok 
+

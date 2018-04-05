@@ -1,5 +1,5 @@
 /*
- * Class EV_TITLED_WINDOW_ACTION_SEQUENCES
+ * Class EV_MENU_ITEM_LIST_ACTION_SEQUENCES
  */
 
 #include "eif_macros.h"
@@ -22,10 +22,8 @@ static const EIF_TYPE_INDEX egt_9_1228 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1228 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1228 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1228 [] = {0xFF01,1227,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1228 [] = {0xFF01,1012,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1228 [] = {0xFF01,1146,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1228 [] = {0xFF01,1146,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1228 [] = {0xFF01,1146,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1228 [] = {0xFF01,1004,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1228 [] = {0xFF01,1141,0xFFFF};
 
 
 static const struct desc_info desc_1228[] = {
@@ -62,15 +60,13 @@ static const struct desc_info desc_1228[] = {
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1228), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_1228), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1228), 17470, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1228), 17471, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_16_1228), 17472, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1228), 17621, 0xFFFFFFFF},
 };
 void Init1228(void)
 {
 	IDSC(desc_1228, 0, 1227);
 	IDSC(desc_1228 + 1, 1, 1227);
-	IDSC(desc_1228 + 32, 607, 1227);
+	IDSC(desc_1228 + 32, 744, 1227);
 }
 
 

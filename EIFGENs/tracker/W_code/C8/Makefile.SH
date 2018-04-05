@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C8_c.o 
 
-OLDOBJECTS =  ki1190.o ki1190d.o kl1198.o kl1198d.o ki1197.o ki1197d.o ev1204.o \
-	ev1204d.o ev1209.o ev1209d.o ki1191.o ki1191d.o ki1195.o ki1195d.o \
-	ki1192.o ki1192d.o ev1207.o ev1207d.o ev1200.o ev1200d.o ev1205.o \
-	ev1205d.o kl1189.o kl1189d.o kl1188.o kl1188d.o kl1194.o kl1194d.o \
-	ev1203.o ev1203d.o ev1220.o ev1220d.o ev1202.o ev1202d.o ki1196.o \
-	ki1196d.o ev1199.o ev1199d.o ev1201.o ev1201d.o uc1206.o uc1206d.o \
-	kl1208.o kl1208d.o ev1219.o ev1219d.o kl1193.o kl1193d.o ev1218.o \
-	ev1218d.o ev1217.o ev1217d.o ev1216.o ev1216d.o ev1215.o ev1215d.o \
-	ev1214.o ev1214d.o ev1213.o ev1213d.o ev1212.o ev1212d.o ev1211.o \
-	ev1211d.o ev1210.o ev1210d.o 
+OLDOBJECTS =  va1188.o va1188d.o va1189.o va1189d.o kl1204.o kl1204d.o ki1196.o \
+	ki1196d.o ki1203.o ki1203d.o ev1210.o ev1210d.o ev1215.o ev1215d.o \
+	ki1197.o ki1197d.o kl1190.o kl1190d.o ki1201.o ki1201d.o ki1198.o \
+	ki1198d.o ev1206.o ev1206d.o ev1211.o ev1211d.o ev1213.o ev1213d.o \
+	kl1195.o kl1195d.o kl1194.o kl1194d.o kl1200.o kl1200d.o ev1208.o \
+	ev1208d.o ev1209.o ev1209d.o ki1202.o ki1202d.o ev1205.o ev1205d.o \
+	ev1207.o ev1207d.o uc1212.o uc1212d.o kl1214.o kl1214d.o uc1193.o \
+	uc1193d.o uc1192.o uc1192d.o uc1191.o uc1191d.o kl1199.o kl1199d.o \
+	ev1220.o ev1220d.o ev1219.o ev1219d.o ev1218.o ev1218d.o ev1217.o \
+	ev1217d.o ev1216.o ev1216d.o 
 
 all: Cobj8.o
 

@@ -1,0 +1,1 @@
+new_container("cid4", [metal,   3.0], "pid1")

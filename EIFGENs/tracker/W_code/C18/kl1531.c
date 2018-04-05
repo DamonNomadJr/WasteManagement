@@ -1,5 +1,5 @@
 /*
- * Code for class KL_WINDOWS_OUTPUT_FILE
+ * Code for class KL_SHARED_FILE_SYSTEM
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,10 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1531_15402(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1531_15424(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1531_15425(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1531_15426(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1531_15427(EIF_REFERENCE);
 extern void EIF_Minit1531(void);
 
 #ifdef __cplusplus
@@ -32,20 +35,282 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {KL_WINDOWS_OUTPUT_FILE}.eol */
-RTOID (F1531_15402)
-
-
-EIF_TYPED_VALUE F1531_15402 (EIF_REFERENCE Current)
+/* {KL_SHARED_FILE_SYSTEM}.file_system */
+RTOID (F1531_15424)
+EIF_TYPED_VALUE F1531_15424 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOTC (F1531_15402,21535,RTMS_EX_H("\015\012",2,3338));
+	char *l_feature_name = "file_system";
+	RTEX;
+	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
+#define up1 up1x.it_p
+	EIF_REFERENCE tr1 = NULL;
+	EIF_BOOLEAN tb1;
+	RTCDD;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+#define Result RTOTRR
+	RTOTDR(F1531_15424);
+	dtype = Dtype(Current);
+
+	RTLI(2);
+	RTLR(0,Current);
+	RTLR(1,tr1);
+	RTLIU(2);
+	RTLU (SK_REF, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1530, Current, 0, 0, 21631);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(1530, Current, 21631);
+	RTIV(Current, RTAL);
+	RTOTP;
+	RTHOOK(1);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6494, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTNHOOK(1,1);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4928, "is_windows", tr1))(tr1)).it_b);
+	if (tb1) {
+		RTHOOK(2);
+		RTDBGAL(Current, 0, 0xF8000608, 0,0); /* Result */
+		Result = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(11348, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	} else {
+		RTHOOK(3);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6494, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		RTNHOOK(3,1);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4929, "is_unix", tr1))(tr1)).it_b);
+		if (tb1) {
+			RTHOOK(4);
+			RTDBGAL(Current, 0, 0xF8000608, 0,0); /* Result */
+			Result = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(11350, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		} else {
+			RTHOOK(5);
+			RTDBGAL(Current, 0, 0xF8000608, 0,0); /* Result */
+			Result = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(11350, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		}
+	}
+	if (RTAL & CK_ENSURE) {
+		RTHOOK(6);
+		RTCT("file_system_not_void", EX_POST);
+		if ((EIF_BOOLEAN)(Result != NULL)) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+		RTHOOK(7);
+		RTCT("current_file_system", EX_POST);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(11487, "is_current_file_system", Result))(Result)).it_b);
+		if (tb1) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTOTE;
+	RTHOOK(8);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
+#undef up1
+#undef Result
+}
+
+/* {KL_SHARED_FILE_SYSTEM}.windows_file_system */
+RTOID (F1531_15425)
+EIF_TYPED_VALUE F1531_15425 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "windows_file_system";
+	RTEX;
+	EIF_REFERENCE tr1 = NULL;
+	RTCDD;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+#define Result RTOTRR
+	RTOTDR(F1531_15425);
+	dtype = Dtype(Current);
+
+	RTLI(2);
+	RTLR(0,tr1);
+	RTLR(1,Current);
+	RTLIU(2);
+	RTLU (SK_REF, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1530, Current, 0, 0, 21632);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(1530, Current, 21632);
+	RTIV(Current, RTAL);
+	RTOTP;
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0xF800060A, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(1546, 0x01).id);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(11486, Dtype(tr1)))(tr1);
+	RTNHOOK(1,1);
+	Result = (EIF_REFERENCE) RTCCL(tr1);
+	if (RTAL & CK_ENSURE) {
+		RTHOOK(2);
+		RTCT("file_system_not_void", EX_POST);
+		if ((EIF_BOOLEAN)(Result != NULL)) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTOTE;
+	RTHOOK(3);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
+#undef Result
+}
+
+/* {KL_SHARED_FILE_SYSTEM}.windows_backslash_only_file_system */
+RTOID (F1531_15426)
+EIF_TYPED_VALUE F1531_15426 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "windows_backslash_only_file_system";
+	RTEX;
+	EIF_REFERENCE tr1 = NULL;
+	RTCDD;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+#define Result RTOTRR
+	RTOTDR(F1531_15426);
+	dtype = Dtype(Current);
+
+	RTLI(2);
+	RTLR(0,tr1);
+	RTLR(1,Current);
+	RTLIU(2);
+	RTLU (SK_REF, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1530, Current, 0, 0, 21633);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(1530, Current, 21633);
+	RTIV(Current, RTAL);
+	RTOTP;
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0xF800060A, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(1546, 0x01).id);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(11546, Dtype(tr1)))(tr1);
+	RTNHOOK(1,1);
+	Result = (EIF_REFERENCE) RTCCL(tr1);
+	if (RTAL & CK_ENSURE) {
+		RTHOOK(2);
+		RTCT("file_system_not_void", EX_POST);
+		if ((EIF_BOOLEAN)(Result != NULL)) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTOTE;
+	RTHOOK(3);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
+#undef Result
+}
+
+/* {KL_SHARED_FILE_SYSTEM}.unix_file_system */
+RTOID (F1531_15427)
+EIF_TYPED_VALUE F1531_15427 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "unix_file_system";
+	RTEX;
+	EIF_REFERENCE tr1 = NULL;
+	RTCDD;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+#define Result RTOTRR
+	RTOTDR(F1531_15427);
+	dtype = Dtype(Current);
+
+	RTLI(2);
+	RTLR(0,tr1);
+	RTLR(1,Current);
+	RTLIU(2);
+	RTLU (SK_REF, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1530, Current, 0, 0, 21634);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(1530, Current, 21634);
+	RTIV(Current, RTAL);
+	RTOTP;
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0xF8000609, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(1545, 0x01).id);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(11486, Dtype(tr1)))(tr1);
+	RTNHOOK(1,1);
+	Result = (EIF_REFERENCE) RTCCL(tr1);
+	if (RTAL & CK_ENSURE) {
+		RTHOOK(2);
+		RTCT("file_system_not_void", EX_POST);
+		if ((EIF_BOOLEAN)(Result != NULL)) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTOTE;
+	RTHOOK(3);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
+#undef Result
 }
 
 void EIF_Minit1531 (void)
 {
 	GTCX
-	RTOTS (15402,F1531_15402)
+	RTOTS (15424,F1531_15424)
+	RTOTS (15425,F1531_15425)
+	RTOTS (15426,F1531_15426)
+	RTOTS (15427,F1531_15427)
 }
 
 

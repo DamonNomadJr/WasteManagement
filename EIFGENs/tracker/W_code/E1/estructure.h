@@ -38,8 +38,8 @@ struct eif_ex_912 {union overhead overhead; char data [8];};
 struct eif_ex_917 {union overhead overhead; char data [8];};
 struct eif_ex_921 {union overhead overhead; char data [8];};
 struct eif_ex_925 {union overhead overhead; char data [8];};
-struct eif_ex_978 {union overhead overhead; char data [1];};
-struct eif_ex_1181 {union overhead overhead; char data [16];};
+struct eif_ex_984 {union overhead overhead; char data [1];};
+struct eif_ex_1187 {union overhead overhead; char data [16];};
 
 #ifdef __cplusplus
 }

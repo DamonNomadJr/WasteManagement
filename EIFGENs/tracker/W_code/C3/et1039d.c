@@ -1,5 +1,5 @@
 /*
- * Class ETF_GUI_ROOT_INTERFACE
+ * Class ETF_ABSTRACT_UI_INTERFACE
  */
 
 #include "eif_macros.h"
@@ -22,6 +22,8 @@ static const EIF_TYPE_INDEX egt_9_1039 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1039 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1039 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1039 [] = {0xFF01,1038,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1039 [] = {0xFF01,247,0xFF01,1168,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1039 [] = {0xFF01,1575,0xFF01,0xFFF9,1,185,0xFF01,1168,0xFFFF};
 
 
 static const struct desc_info desc_1039[] = {
@@ -57,17 +59,17 @@ static const struct desc_info desc_1039[] = {
 	{EIF_NON_GENERIC(0x081D /*1038*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1039), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15156, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15157, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x09C7 /*1251*/), 15158, 0},
-	{EIF_NON_GENERIC(0x0195 /*202*/), 15159, 8},
-	{EIF_GENERIC(NULL), 15160, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15216, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1039), 15217, 0},
+	{EIF_GENERIC(egt_14_1039), 15218, 8},
+	{EIF_GENERIC(NULL), 15219, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15220, 0xFFFFFFFF},
 };
 void Init1039(void)
 {
 	IDSC(desc_1039, 0, 1038);
 	IDSC(desc_1039 + 1, 1, 1038);
-	IDSC(desc_1039 + 32, 366, 1038);
+	IDSC(desc_1039 + 32, 377, 1038);
 }
 
 

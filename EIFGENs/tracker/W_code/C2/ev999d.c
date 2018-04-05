@@ -1,5 +1,5 @@
 /*
- * Class EV_ITEM_ACTION_SEQUENCES_I
+ * Class EV_DIALOG_NAMES
  */
 
 #include "eif_macros.h"
@@ -22,9 +22,21 @@ static const EIF_TYPE_INDEX egt_9_999 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_999 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_999 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_999 [] = {0xFF01,998,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_999 [] = {0xFF01,1142,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_999 [] = {0xFF01,1145,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_999 [] = {0xFF01,1145,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_24_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_25_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_26_999 [] = {0xFF01,240,0xFFFF};
+static const EIF_TYPE_INDEX egt_27_999 [] = {0xFF01,240,0xFFFF};
 
 
 static const struct desc_info desc_999[] = {
@@ -60,18 +72,27 @@ static const struct desc_info desc_999[] = {
 	{EIF_NON_GENERIC(0x07CD /*998*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_999), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_999), 14783, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08ED /*1142*/), 14784, 0},
-	{EIF_GENERIC(egt_14_999), 14785, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F3 /*1145*/), 14786, 8},
-	{EIF_GENERIC(egt_15_999), 14787, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x08F3 /*1145*/), 14788, 16},
+	{EIF_GENERIC(egt_13_999), 14864, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_999), 14865, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_15_999), 14866, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_999), 14867, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_17_999), 14868, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_999), 14869, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_19_999), 14870, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_20_999), 14871, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_21_999), 14872, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_22_999), 14873, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_23_999), 14859, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_24_999), 14860, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_25_999), 14861, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_26_999), 14862, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_27_999), 14863, 0xFFFFFFFF},
 };
 void Init999(void)
 {
 	IDSC(desc_999, 0, 998);
 	IDSC(desc_999 + 1, 1, 998);
-	IDSC(desc_999 + 32, 817, 998);
+	IDSC(desc_999 + 32, 883, 998);
 }
 
 

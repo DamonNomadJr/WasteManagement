@@ -40,16 +40,16 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C5_c.o 
 
-OLDOBJECTS =  et1099.o et1099d.o es1102.o es1102d.o es1101.o es1101d.o es1100.o \
-	es1100d.o et1097.o et1097d.o et1096.o et1096d.o et1095.o et1095d.o \
-	et1094.o et1094d.o et1093.o et1093d.o et1092.o et1092d.o da1115.o \
-	da1115d.o ab1117.o ab1117d.o ti1114.o ti1114d.o et1091.o et1091d.o \
-	et1090.o et1090d.o et1089.o et1089d.o da1113.o da1113d.o du1112.o \
-	du1112d.o et1098.o et1098d.o ev1120.o ev1120d.o ev1108.o ev1108d.o \
-	ev1106.o ev1106d.o ev1105.o ev1105d.o ev1121.o ev1121d.o ev1111.o \
-	ev1111d.o ev1118.o ev1118d.o ev1104.o ev1104d.o ev1109.o ev1109d.o \
-	uc1119.o uc1119d.o ev1107.o ev1107d.o kl1116.o kl1116d.o ev1110.o \
-	ev1110d.o kl1103.o kl1103d.o 
+OLDOBJECTS =  et1105.o et1105d.o et1090.o et1090d.o es1108.o es1108d.o es1107.o \
+	es1107d.o es1106.o es1106d.o et1103.o et1103d.o et1089.o et1089d.o \
+	et1102.o et1102d.o et1101.o et1101d.o et1093.o et1093d.o et1100.o \
+	et1100d.o et1091.o et1091d.o et1099.o et1099d.o et1098.o et1098d.o \
+	da1121.o da1121d.o ti1120.o ti1120d.o et1094.o et1094d.o et1097.o \
+	et1097d.o et1096.o et1096d.o et1095.o et1095d.o et1092.o et1092d.o \
+	da1119.o da1119d.o du1118.o du1118d.o et1104.o et1104d.o ev1112.o \
+	ev1112d.o ev1111.o ev1111d.o ev1114.o ev1114d.o ev1117.o ev1117d.o \
+	ev1110.o ev1110d.o ev1115.o ev1115d.o ev1113.o ev1113d.o ev1116.o \
+	ev1116d.o kl1109.o kl1109d.o 
 
 all: Cobj5.o
 

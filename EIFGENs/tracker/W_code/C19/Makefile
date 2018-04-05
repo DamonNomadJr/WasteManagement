@@ -40,16 +40,16 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C19_c.o 
 
-OLDOBJECTS =  ty1568.o ty1568d.o ty1570.o ty1570d.o et1556.o et1556d.o et1574.o \
-	et1574d.o kl1576.o kl1576d.o kl1581.o kl1581d.o yy1555.o yy1555d.o \
-	et1554.o et1554d.o in1569.o in1569d.o kl1577.o kl1577d.o kl1582.o \
-	kl1582d.o yy1552.o yy1552d.o et1553.o et1553d.o ev1573.o ev1573d.o \
-	ki1567.o ki1567d.o ki1579.o ki1579d.o kl1578.o kl1578d.o kl1583.o \
-	kl1583d.o ev1575.o ev1575d.o ki1566.o ki1566d.o ki1580.o ki1580d.o \
-	ev1563.o ev1563d.o ev1561.o ev1561d.o uc1559.o uc1559d.o ev1562.o \
-	ev1562d.o ev1571.o ev1571d.o ev1565.o ev1565d.o uc1560.o uc1560d.o \
-	uc1551.o uc1551d.o ki1557.o ki1557d.o kl1558.o kl1558d.o ev1564.o \
-	ev1564d.o ev1572.o ev1572d.o 
+OLDOBJECTS =  ty1570.o ty1570d.o ty1572.o ty1572d.o da1553.o da1553d.o ti1551.o \
+	ti1551d.o et1576.o et1576d.o et1562.o et1562d.o da1556.o da1556d.o \
+	da1552.o da1552d.o yy1561.o yy1561d.o et1560.o et1560d.o da1555.o \
+	da1555d.o da1554.o da1554d.o in1571.o in1571d.o kl1573.o kl1573d.o \
+	yy1558.o yy1558d.o et1559.o et1559d.o ev1569.o ev1569d.o ki1568.o \
+	ki1568d.o kl1577.o kl1577d.o kl1574.o kl1574d.o ev1575.o ev1575d.o \
+	ki1567.o ki1567d.o kl1578.o kl1578d.o ev1583.o ev1583d.o uc1565.o \
+	uc1565d.o ev1582.o ev1582d.o ev1579.o ev1579d.o ev1580.o ev1580d.o \
+	uc1566.o uc1566d.o uc1557.o uc1557d.o ki1563.o ki1563d.o kl1564.o \
+	kl1564d.o ev1581.o ev1581d.o 
 
 all: Cobj19.o
 

@@ -40,16 +40,16 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C7_c.o 
 
-OLDOBJECTS =  et1164.o et1164d.o et1163.o et1163d.o et1165.o et1165d.o et1181.o \
-	et1181d.o va1182.o va1182d.o va1183.o va1183d.o et1179.o et1179d.o \
-	et1177.o et1177d.o et1175.o et1175d.o et1173.o et1173d.o et1171.o \
-	et1171d.o et1169.o et1169d.o et1167.o et1167d.o et1180.o et1180d.o \
-	et1178.o et1178d.o et1176.o et1176d.o et1174.o et1174d.o et1172.o \
-	et1172d.o et1170.o et1170d.o et1168.o et1168d.o et1166.o et1166d.o \
-	da1162.o da1162d.o ev1161.o ev1161d.o kl1184.o kl1184d.o ev1160.o \
-	ev1160d.o kl1158.o kl1158d.o kl1157.o kl1157d.o ki1155.o ki1155d.o \
-	uc1187.o uc1187d.o uc1186.o uc1186d.o uc1185.o uc1185d.o ki1159.o \
-	ki1159d.o kl1156.o kl1156d.o 
+OLDOBJECTS =  et1170.o et1170d.o et1169.o et1169d.o et1171.o et1171d.o et1187.o \
+	et1187d.o et1185.o et1185d.o et1183.o et1183d.o et1181.o et1181d.o \
+	et1179.o et1179d.o et1177.o et1177d.o et1175.o et1175d.o et1173.o \
+	et1173d.o et1186.o et1186d.o et1184.o et1184d.o et1182.o et1182d.o \
+	et1180.o et1180d.o et1178.o et1178d.o et1176.o et1176d.o et1174.o \
+	et1174d.o et1172.o et1172d.o da1168.o da1168d.o ev1167.o ev1167d.o \
+	kl1155.o kl1155d.o ev1166.o ev1166d.o kl1164.o kl1164d.o kl1163.o \
+	kl1163d.o ki1160.o ki1160d.o ki1161.o ki1161d.o ki1159.o ki1159d.o \
+	ki1158.o ki1158d.o ki1165.o ki1165d.o kl1162.o kl1162d.o kl1157.o \
+	kl1157d.o uc1156.o uc1156d.o 
 
 all: Cobj7.o
 

@@ -1,5 +1,5 @@
 /*
- * Class ETF_TUPLE_ARG
+ * Class ETF_REAL_ARG
  */
 
 #include "eif_macros.h"
@@ -23,7 +23,6 @@ static const EIF_TYPE_INDEX egt_10_1095 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1095 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1095 [] = {0xFF01,1094,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1095 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1095 [] = {0xFF01,247,0xFF01,1084,0xFFFF};
 
 
 static const struct desc_info desc_1095[] = {
@@ -49,7 +48,7 @@ static const struct desc_info desc_1095[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1095), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1095), 15547, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1095), 15634, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1095), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1095), 24, 0xFFFFFFFF},
@@ -59,17 +58,17 @@ static const struct desc_info desc_1095[] = {
 	{EIF_NON_GENERIC(0x088D /*1094*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1095), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1095), 15516, 0},
-	{EIF_GENERIC(NULL), 15517, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15545, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1095), 15546, 8},
+	{EIF_GENERIC(egt_13_1095), 15621, 0},
+	{EIF_GENERIC(NULL), 15622, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15632, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x019B /*205*/), 15633, 8},
 };
 void Init1095(void)
 {
 	IDSC(desc_1095, 0, 1094);
 	IDSC(desc_1095 + 1, 1, 1094);
 	IDSC(desc_1095 + 32, 395, 1094);
-	IDSC(desc_1095 + 34, 385, 1094);
+	IDSC(desc_1095 + 34, 431, 1094);
 }
 
 

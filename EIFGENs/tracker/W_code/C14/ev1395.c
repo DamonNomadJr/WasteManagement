@@ -1,5 +1,5 @@
 /*
- * Code for class EV_TEXT_ALIGNABLE_I
+ * Code for class EV_PIXMAPABLE_I
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,9 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F1395_13118(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1395_13182(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE F1395_13183_body(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1395_13183(EIF_REFERENCE);
 extern void EIF_Minit1395(void);
 
 #ifdef __cplusplus
@@ -32,13 +34,80 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {EV_TEXT_ALIGNABLE_I}.default_alignment */
-EIF_TYPED_VALUE F1395_13118 (EIF_REFERENCE Current)
+/* {EV_PIXMAPABLE_I}.pixmap_equal_to */
+EIF_TYPED_VALUE F1395_13182 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
-	char *l_feature_name = "default_alignment";
+	char *l_feature_name = "pixmap_equal_to";
 	RTEX;
-	EIF_INTEGER_32 Result = ((EIF_INTEGER_32) 0);
+	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
+#define arg1 arg1x.it_r
+	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
+#define up1 up1x.it_p
+	EIF_TYPED_VALUE ur1x = {{0}, SK_REF};
+#define ur1 ur1x.it_r
+	EIF_REFERENCE tr1 = NULL;
+	EIF_BOOLEAN tb1;
+	EIF_BOOLEAN tb2;
+	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	
+	RTLI(5);
+	RTLR(0,arg1);
+	RTLR(1,loc1);
+	RTLR(2,Current);
+	RTLR(3,tr1);
+	RTLR(4,ur1);
+	RTLIU(5);
+	RTLU (SK_BOOL, &Result);
+	RTLU(SK_REF,&arg1);
+	RTLU (SK_REF, &Current);
+	RTLU(SK_REF, &loc1);
+	
+	RTEAA(l_feature_name, 1394, Current, 1, 1, 19785);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(1394, Current, 19785);
+	RTCC(arg1, 1394, l_feature_name, 1, eif_new_type(1305, 0x01), 0x01);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
+	tb1 = '\0';
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(10113, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	loc1 = RTCCL(tr1);
+	if (EIF_TEST(loc1)) {
+		ur1 = RTCCL(loc1);
+		tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(11, "is_equal", arg1))(arg1, ur1x)).it_b);
+		tb1 = tb2;
+	}
+	Result = (EIF_BOOLEAN) tb1;
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(2);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(4);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
+#undef up1
+#undef ur1
+#undef arg1
+}
+
+/* {EV_PIXMAPABLE_I}.interface */
+static EIF_TYPED_VALUE F1395_13183_body (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "interface";
+	RTEX;
+	EIF_REFERENCE Result = ((EIF_REFERENCE) 0);
 	
 	RTSN;
 	RTDA;
@@ -47,30 +116,48 @@ EIF_TYPED_VALUE F1395_13118 (EIF_REFERENCE Current)
 	RTLI(1);
 	RTLR(0,Current);
 	RTLIU(1);
-	RTLU (SK_INT32, &Result);
+	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1394, Current, 0, 0, 19656);
+	RTEAA(l_feature_name, 1394, Current, 0, 0, 19786);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(1394, Current, 19656);
+	RTDBGEAA(1394, Current, 19786);
 	RTIV(Current, RTAL);
-	RTHOOK(1);
-	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(4977, 962))(Current)).it_i4);
-	Result = (EIF_INTEGER_32) Result;
 	RTVI(Current, RTAL);
 	RTRS;
-	RTHOOK(2);
+	RTHOOK(1);
 	RTDBGLE;
 	RTMD(0);
 	RTLE;
 	RTLO(2);
 	RTEE;
-	{ EIF_TYPED_VALUE r; r.type = SK_INT32; r.it_i4 = Result; return r; }
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
 }
+
+EIF_TYPED_VALUE F1395_13183 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_REF;
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(9341,Dtype(Current)));
+	if (!r.it_r) {
+		if (RTAT(RTWCT(9341, Dtype(Current), Dftype(Current)))) {
+			GTCX
+			RTLD;
+			RTLI(1);
+			RTLR(0,Current);
+			RTLIU(1);
+			r.it_r = (F1395_13183_body (Current)).it_r;
+			*(EIF_REFERENCE *)(Current + RTWA(9341,Dtype(Current))) = r.it_r;
+			RTAR(Current, r.it_r);
+			RTLE;
+		}
+	}
+	return r;
+}
+
 
 void EIF_Minit1395 (void)
 {

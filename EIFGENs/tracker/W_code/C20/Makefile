@@ -40,16 +40,16 @@ SYSTEM_IN_DYNAMIC_LIB = tracker.so
 
 OBJECTS = big_file_C20_c.o 
 
-OLDOBJECTS =  fu1614.o fu1614d.o ha1595.o ha1595d.o ha1616.o ha1616d.o ta1598.o \
-	ta1598d.o he1606.o he1606d.o bi1609.o bi1609d.o in1594.o in1594d.o \
-	bi1605.o bi1605d.o ta1596.o ta1596d.o pr1611.o pr1611d.o pr1607.o \
-	pr1607d.o ha1599.o ha1599d.o tr1608.o tr1608d.o ac1593.o ac1593d.o \
-	ac1613.o ac1613d.o li1610.o li1610d.o ta1597.o ta1597d.o kl1584.o \
-	kl1584d.o kl1587.o kl1587d.o kl1602.o kl1602d.o kl1585.o kl1585d.o \
-	kl1588.o kl1588d.o kl1603.o kl1603d.o kl1590.o kl1590d.o kl1600.o \
-	kl1600d.o kl1586.o kl1586d.o kl1589.o kl1589d.o kl1604.o kl1604d.o \
-	ev1592.o ev1592d.o ev1612.o ev1612d.o kl1591.o kl1591d.o kl1601.o \
-	kl1601d.o kl1615.o kl1615d.o 
+OLDOBJECTS =  ha1608.o ha1608d.o ta1611.o ta1611d.o he1587.o he1587d.o so1615.o \
+	so1615d.o bi1590.o bi1590d.o bi1586.o bi1586d.o ta1609.o ta1609d.o \
+	pr1588.o pr1588d.o ha1612.o ha1612d.o tr1589.o tr1589d.o ac1614.o \
+	ac1614d.o li1591.o li1591d.o ta1610.o ta1610d.o so1616.o so1616d.o \
+	kl1595.o kl1595d.o kl1598.o kl1598d.o kl1601.o kl1601d.o kl1602.o \
+	kl1602d.o kl1605.o kl1605d.o kl1596.o kl1596d.o kl1599.o kl1599d.o \
+	kl1603.o kl1603d.o kl1606.o kl1606d.o ki1593.o ki1593d.o kl1597.o \
+	kl1597d.o kl1600.o kl1600d.o kl1604.o kl1604d.o kl1607.o kl1607d.o \
+	ev1613.o ev1613d.o ki1594.o ki1594d.o ev1584.o ev1584d.o ev1585.o \
+	ev1585d.o ki1592.o ki1592d.o 
 
 all: Cobj20.o
 

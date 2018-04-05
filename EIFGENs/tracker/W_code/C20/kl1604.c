@@ -1,5 +1,5 @@
 /*
- * Code for class KL_ARRAY [REAL_32]
+ * Code for class KL_ARRAY [BOOLEAN]
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F1604_9915(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F1604_10020(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit1604(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {KL_ARRAY}.new_rebase */
-void F1604_9915 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F1604_10020 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "new_rebase";
@@ -59,12 +59,12 @@ void F1604_9915 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU (SK_REF, &Current);
 	RTLU(SK_INT32, &loc1);
 	
-	RTEAA(l_feature_name, 1603, Current, 1, 1, 16306);
+	RTEAA(l_feature_name, 1603, Current, 1, 1, 16465);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1603, Current, 16306);
+	RTDBGEAA(1603, Current, 16465);
 	RTIV(Current, RTAL);
 	if (RTAL & CK_ENSURE) {
 		in_assertion = ~0;

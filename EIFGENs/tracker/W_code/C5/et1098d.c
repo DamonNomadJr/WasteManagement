@@ -1,5 +1,5 @@
 /*
- * Class ETF_GUI_OUTPUT_HANDLER
+ * Class ETF_INT_ARG
  */
 
 #include "eif_macros.h"
@@ -23,9 +23,6 @@ static const EIF_TYPE_INDEX egt_10_1098 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1098 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1098 [] = {0xFF01,1097,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1098 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1098 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1098 [] = {0xFF01,977,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1098 [] = {0xFF01,231,0xFFFF};
 
 
 static const struct desc_info desc_1098[] = {
@@ -51,7 +48,7 @@ static const struct desc_info desc_1098[] = {
 	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_8_1098), 20, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_9_1098), 21, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_1098), 15643, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_10_1098), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_1098), 24, 0xFFFFFFFF},
@@ -61,22 +58,17 @@ static const struct desc_info desc_1098[] = {
 	{EIF_NON_GENERIC(0x0893 /*1097*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1098), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15558, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1098), 15552, 0},
-	{EIF_GENERIC(egt_14_1098), 15553, 8},
-	{EIF_GENERIC(NULL), 15561, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15554, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15557, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15556, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1098), 15559, 16},
-	{EIF_GENERIC(egt_16_1098), 15560, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1098), 15621, 0},
+	{EIF_GENERIC(NULL), 15622, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15641, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x018F /*199*/), 15642, 8},
 };
 void Init1098(void)
 {
 	IDSC(desc_1098, 0, 1097);
 	IDSC(desc_1098 + 1, 1, 1097);
-	IDSC(desc_1098 + 32, 375, 1097);
-	IDSC(desc_1098 + 39, 484, 1097);
+	IDSC(desc_1098 + 32, 395, 1097);
+	IDSC(desc_1098 + 34, 403, 1097);
 }
 
 

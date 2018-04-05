@@ -1,5 +1,5 @@
 /*
- * Class EV_GTK_ENVIRONMENT
+ * Class EV_STANDARD_DIALOG_ACTION_SEQUENCES_I
  */
 
 #include "eif_macros.h"
@@ -22,9 +22,8 @@ static const EIF_TYPE_INDEX egt_9_1000 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1000 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1000 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1000 [] = {0xFF01,999,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1000 [] = {0xFF01,246,0xFF01,237,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1000 [] = {0xFF01,246,0xFF01,237,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1000 [] = {0xFF01,246,0xFF01,237,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1000 [] = {0xFF01,1152,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1000 [] = {0xFF01,1152,0xFFFF};
 
 
 static const struct desc_info desc_1000[] = {
@@ -60,15 +59,16 @@ static const struct desc_info desc_1000[] = {
 	{EIF_NON_GENERIC(0x07CF /*999*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1000), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1000), 14789, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1000), 14790, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_1000), 14791, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1000), 14874, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0901 /*1152*/), 14875, 0},
+	{EIF_GENERIC(egt_14_1000), 14876, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0901 /*1152*/), 14877, 8},
 };
 void Init1000(void)
 {
 	IDSC(desc_1000, 0, 999);
 	IDSC(desc_1000 + 1, 1, 999);
-	IDSC(desc_1000 + 32, 807, 999);
+	IDSC(desc_1000 + 32, 882, 999);
 }
 
 

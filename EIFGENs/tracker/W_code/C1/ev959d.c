@@ -64,7 +64,7 @@ void Init959(void)
 {
 	IDSC(desc_959, 0, 958);
 	IDSC(desc_959 + 1, 1, 958);
-	IDSC(desc_959 + 32, 896, 958);
+	IDSC(desc_959 + 32, 905, 958);
 }
 
 

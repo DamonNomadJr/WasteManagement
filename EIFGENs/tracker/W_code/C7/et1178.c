@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F1178_10230(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern void F1178_10323(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern void EIF_Minit1178(void);
 extern EIF_REFERENCE _A1178_56();
 
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {ETF_UNDO_INTERFACE}.make */
-void F1178_10230 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x)
+void F1178_10323 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -76,12 +76,12 @@ void F1178_10230 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE 
 	RTLU(SK_REF,&arg3);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1177, Current, 0, 3, 16867);
+	RTEAA(l_feature_name, 1177, Current, 0, 3, 17019);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1177, Current, 16867);
+	RTDBGEAA(1177, Current, 17019);
 	RTCC(arg1, 1177, l_feature_name, 1, eif_new_type(231, 0x01), 0x01);
 	{
 		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,0,185,0xFFFF};
@@ -91,15 +91,15 @@ void F1178_10230 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE 
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
 		RTCC(arg2, 1177, l_feature_name, 2, typres0, 0x01);
 	}
-	RTCC(arg3, 1177, l_feature_name, 3, eif_new_type(1032, 0x01), 0x01);
+	RTCC(arg3, 1177, l_feature_name, 3, eif_new_type(1038, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	ur1 = RTCCL(arg1);
 	ur2 = RTCCL(arg2);
 	ur3 = RTCCL(arg3);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(7793, 1163))(Current, ur1x, ur2x, ur3x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(7898, 1169))(Current, ur1x, ur2x, ur3x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 7796, 0xF80000FB, 0); /* etf_cmd_routine */
+	RTDBGAA(Current, dtype, 7901, 0xF80000FB, 0); /* etf_cmd_routine */
 	{
 		EIF_TYPE_INDEX typarr0[] = {0xFFF9,1,185,0xFF01,0,0xFFFF};
 		EIF_TYPE typres0;
@@ -117,26 +117,26 @@ void F1178_10230 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE 
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A1178_56, (EIF_POINTER)(0),7818, 0, 0, 1, -1, tr1, 0);
+		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A1178_56, (EIF_POINTER)(0),7917, 0, 0, 1, -1, tr1, 0);
 	}
 	RTAR(Current, tr2);
-	*(EIF_REFERENCE *)(Current + RTWA(7796, dtype)) = (EIF_REFERENCE) RTCCL(tr2);
+	*(EIF_REFERENCE *)(Current + RTWA(7901, dtype)) = (EIF_REFERENCE) RTCCL(tr2);
 	RTHOOK(3);
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7796, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7901, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(3,1);
 	ur1 = RTCCL(arg2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4521, "set_operands", tr1))(tr1, ur1x);
 	RTHOOK(4);
 	if ((EIF_BOOLEAN) 1) {
 		RTHOOK(5);
-		RTDBGAA(Current, dtype, 7804, 0xF80000E7, 0); /* out */
+		RTDBGAA(Current, dtype, 7909, 0xF80000E7, 0); /* out */
 		tr1 = RTMS_EX_H("undo",4,1970168943);
 		RTAR(Current, tr1);
-		*(EIF_REFERENCE *)(Current + RTWA(7804, dtype)) = (EIF_REFERENCE) tr1;
+		*(EIF_REFERENCE *)(Current + RTWA(7909, dtype)) = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(6);
-		RTDBGAA(Current, dtype, 7798, 0x04000000, 1); /* etf_cmd_error */
-		*(EIF_BOOLEAN *)(Current + RTWA(7798, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
+		RTDBGAA(Current, dtype, 7903, 0x04000000, 1); /* etf_cmd_error */
+		*(EIF_BOOLEAN *)(Current + RTWA(7903, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
 	}
 	RTVI(Current, RTAL);
 	RTRS;

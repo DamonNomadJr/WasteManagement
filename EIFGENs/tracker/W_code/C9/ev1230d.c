@@ -1,5 +1,5 @@
 /*
- * Class EV_BUTTON_ACTION_SEQUENCES
+ * Class EV_MENU_ITEM_ACTION_SEQUENCES
  */
 
 #include "eif_macros.h"
@@ -22,8 +22,8 @@ static const EIF_TYPE_INDEX egt_9_1230 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1230 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1230 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1230 [] = {0xFF01,1229,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1230 [] = {0xFF01,1015,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1230 [] = {0xFF01,1146,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1230 [] = {0xFF01,1013,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1230 [] = {0xFF01,1152,0xFFFF};
 
 
 static const struct desc_info desc_1230[] = {
@@ -60,13 +60,13 @@ static const struct desc_info desc_1230[] = {
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1230), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_1230), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1230), 17476, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1230), 17623, 0xFFFFFFFF},
 };
 void Init1230(void)
 {
 	IDSC(desc_1230, 0, 1229);
 	IDSC(desc_1230 + 1, 1, 1229);
-	IDSC(desc_1230 + 32, 582, 1229);
+	IDSC(desc_1230 + 32, 671, 1229);
 }
 
 

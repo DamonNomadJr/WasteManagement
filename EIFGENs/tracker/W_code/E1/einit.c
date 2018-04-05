@@ -1647,6 +1647,19 @@ extern void Init1618(void);
 extern void Init1619(void);
 extern void Init1620(void);
 extern void Init1621(void);
+extern void Init1622(void);
+extern void Init1623(void);
+extern void Init1624(void);
+extern void Init1625(void);
+extern void Init1626(void);
+extern void Init1627(void);
+extern void Init1628(void);
+extern void Init1629(void);
+extern void Init1630(void);
+extern void Init1631(void);
+extern void Init1632(void);
+extern void Init1633(void);
+extern void Init1634(void);
 
 void egc_tabinit_init(void)
 {
@@ -3271,14 +3284,27 @@ void egc_tabinit_init(void)
 	Init1619();
 	Init1620();
 	Init1621();
+	Init1622();
+	Init1623();
+	Init1624();
+	Init1625();
+	Init1626();
+	Init1627();
+	Init1628();
+	Init1629();
+	Init1630();
+	Init1631();
+	Init1632();
+	Init1633();
+	Init1634();
 }
 
 extern void egc_einit_init(void);
 void egc_einit_init (void)
 {
-	ccount = 976;
-	eif_nb_org_routines = 16362;
-	eif_nb_features = 22306;
+	ccount = 982;
+	eif_nb_org_routines = 16467;
+	eif_nb_features = 22467;
 }
 
 extern void EIF_Minit1(void);
@@ -4813,6 +4839,19 @@ extern void EIF_Minit1618(void);
 extern void EIF_Minit1619(void);
 extern void EIF_Minit1620(void);
 extern void EIF_Minit1621(void);
+extern void EIF_Minit1622(void);
+extern void EIF_Minit1623(void);
+extern void EIF_Minit1624(void);
+extern void EIF_Minit1625(void);
+extern void EIF_Minit1626(void);
+extern void EIF_Minit1627(void);
+extern void EIF_Minit1628(void);
+extern void EIF_Minit1629(void);
+extern void EIF_Minit1630(void);
+extern void EIF_Minit1631(void);
+extern void EIF_Minit1632(void);
+extern void EIF_Minit1633(void);
+extern void EIF_Minit1634(void);
 
 extern void egc_system_mod_init_init(void);
 void egc_system_mod_init_init (void)
@@ -6350,6 +6389,19 @@ void egc_system_mod_init_init (void)
 	EIF_Minit1619();
 	EIF_Minit1620();
 	EIF_Minit1621();
+	EIF_Minit1622();
+	EIF_Minit1623();
+	EIF_Minit1624();
+	EIF_Minit1625();
+	EIF_Minit1626();
+	EIF_Minit1627();
+	EIF_Minit1628();
+	EIF_Minit1629();
+	EIF_Minit1630();
+	EIF_Minit1631();
+	EIF_Minit1632();
+	EIF_Minit1633();
+	EIF_Minit1634();
 }
 
 #ifdef __cplusplus

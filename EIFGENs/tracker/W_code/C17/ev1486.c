@@ -1,5 +1,5 @@
 /*
- * Code for class EV_CHECK_MENU_ITEM_I
+ * Code for class EV_TREE_ITEM_I
  */
 
 #include "eif_eiffel.h"
@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-static EIF_TYPED_VALUE F1486_14571_body(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F1486_14571(EIF_REFERENCE);
+static EIF_TYPED_VALUE F1486_14601_body(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1486_14601(EIF_REFERENCE);
 extern void EIF_Minit1486(void);
 
 #ifdef __cplusplus
@@ -33,8 +33,8 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {EV_CHECK_MENU_ITEM_I}.interface */
-static EIF_TYPED_VALUE F1486_14571_body (EIF_REFERENCE Current)
+/* {EV_TREE_ITEM_I}.interface */
+static EIF_TYPED_VALUE F1486_14601_body (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "interface";
@@ -51,12 +51,12 @@ static EIF_TYPED_VALUE F1486_14571_body (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1485, Current, 0, 0, 20844);
+	RTEAA(l_feature_name, 1485, Current, 0, 0, 20930);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(1485, Current, 20844);
+	RTDBGEAA(1485, Current, 20930);
 	RTIV(Current, RTAL);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -69,20 +69,20 @@ static EIF_TYPED_VALUE F1486_14571_body (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
 }
 
-EIF_TYPED_VALUE F1486_14571 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F1486_14601 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(9236,Dtype(Current)));
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(9341,Dtype(Current)));
 	if (!r.it_r) {
-		if (RTAT(RTWCT(9236, Dtype(Current), Dftype(Current)))) {
+		if (RTAT(RTWCT(9341, Dtype(Current), Dftype(Current)))) {
 			GTCX
 			RTLD;
 			RTLI(1);
 			RTLR(0,Current);
 			RTLIU(1);
-			r.it_r = (F1486_14571_body (Current)).it_r;
-			*(EIF_REFERENCE *)(Current + RTWA(9236,Dtype(Current))) = r.it_r;
+			r.it_r = (F1486_14601_body (Current)).it_r;
+			*(EIF_REFERENCE *)(Current + RTWA(9341,Dtype(Current))) = r.it_r;
 			RTAR(Current, r.it_r);
 			RTLE;
 		}
